@@ -1,9 +1,36 @@
 @font-face {
-    font-family: "Poppins";
-    src: local("Poppins-SemiBold"),
-    url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
-    url("../fonts/Poppins-SemiBold.woff") format("woff");
+    font-family: "Manrope";
+    src: local("Manrope-Bold"),
+    url("../fonts/Manrope-Bold.woff2") format("woff2"),
+    url("../fonts/Manrope-Bold.woff") format("woff");
     font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: local("Manrope-ExtraBold"),
+    url("../fonts/Manrope-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Manrope-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: local("Manrope-Medium"),
+    url("../fonts/Manrope-Medium.woff2") format("woff2"),
+    url("../fonts/Manrope-Medium.woff") format("woff");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: local("Manrope-Regular"),
+    url("../fonts/Manrope-Regular.woff2") format("woff2"),
+    url("../fonts/Manrope-Regular.woff") format("woff");
+    font-weight: 400;
     font-display: swap;
 }
 
@@ -24,7 +51,7 @@ img {
 body {
     min-width: 320px;
     max-width: 3840px;
-    /*font-family: "Poppins", sans-serif;*/
+    font-family: "Manrope", sans-serif;
     background-color: white;
 }
 
@@ -72,10 +99,31 @@ a:active {
     box-sizing: inherit;
 }
 
+.nav-btn {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 100%;
+    background: #ffffff;
+    position: relative;
+
+}
+
 /* header */
 .header {
     p, span, button, li, a {
         color: #F4F3F3;
     }
 }
+
+/*banner*/
+
+.main__btn {
+    padding: 18px 35px;
+    border-radius: 40px;
+    background-color: #C2C99F;
+    color: #F4F3F3;
+    font-size: 16px;
+    position: relative;
+}
+
 /**/
