@@ -74,7 +74,7 @@ a:active {
 
 /* header */
 .header {
-    h1, p, span, button {
+    p, span, button, li, a {
         color: #F4F3F3;
     }
 }
