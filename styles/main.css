@@ -66,7 +66,37 @@ p {
 h1 {
     margin: 0;
     color: var(--title-color);
+}
 
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    color: #2E140E;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #2E140E;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #2E140E;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #2E140E;
 }
 
 a {
@@ -104,7 +134,12 @@ a:active {
     height: 30px !important;
     border-radius: 100%;
     background: #ffffff;
+    color: #2E140E;
     position: relative;
+}
+
+.nav-btn::after {
+    font-size: 9px !important;
 
 }
 
