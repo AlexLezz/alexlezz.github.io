@@ -168,279 +168,888 @@
             <div class="swiper-pagination banner-pagination"></div>
         </div>
     </section>
-    <section>
+
+    <section class="popular-products">
         <div class="py-[35px] pb-[35px]">
             <div class="flex container justify-between items-center gap-[5px]">
-                <h2 class="mb-[30px]">Популярные товары</h2>
-                <div class="">
-                    <button class="nav-btn"></button>
-                    <button class="nav-btn"></button>
+                <h2 class="mb-[30px]">Новые поступления</h2>
+                <div class="flex items-center gap-[14px]">
+                    <button class="nav-btn shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] flex justify-center items-center product-nav__prev">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="btn__prev" d="M2.89633 5.6707L8.44668 0.1357C8.62853 -0.0455414 8.92295 -0.0452367 9.1045 0.136638C9.28591 0.318488 9.28544 0.613073 9.10356 0.794455L3.88358 6.00002L9.10375 11.2056C9.2856 11.387 9.28607 11.6814 9.10469 11.8632C9.01368 11.9544 8.89445 12 8.77523 12C8.65631 12 8.53755 11.9547 8.44671 11.8642L2.89633 6.32932C2.80874 6.24218 2.7596 6.12358 2.7596 6.00002C2.7596 5.87646 2.80889 5.75801 2.89633 5.6707Z" fill="#2E140E"/>
+                        </svg>
+                    </button>
+                    <button class="nav-btn shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] flex justify-center items-center product-nav__next">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="btn__next" d="M9.10367 5.6707L3.55332 0.1357C3.37147 -0.0455414 3.07705 -0.0452367 2.8955 0.136638C2.71409 0.318488 2.71456 0.613073 2.89644 0.794455L8.11642 6.00002L2.89625 11.2056C2.7144 11.387 2.71393 11.6814 2.89531 11.8632C2.98632 11.9544 3.10555 12 3.22477 12C3.34369 12 3.46245 11.9547 3.55329 11.8642L9.10367 6.32932C9.19126 6.24218 9.2404 6.12358 9.2404 6.00002C9.2404 5.87646 9.19111 5.75801 9.10367 5.6707Z" fill="#2E140E"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
-            <div class="swiper products-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
-                            <button class="absolute top-[26px] right-[23px]">
-                                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
-                                </svg>
-                            </button>
-                            <div class="flex flex-col gap-y-[20px]">
-                                <div class="w-full flex justify-center">
-                                    <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+            <div class="pl-[142px] mt-[30px] relative">
+                <div class="absolute top-0 right-0 z-[100] w-[142px] h-[100%] bg-gradient-to-r from-transparent to-white/60">
+                </div>
+                <div class="swiper products-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h3>Горячий шоколад Van Houten Special Bar</h3>
-                                <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
-                                <div class="flex justify-between gap-[5px] items-center">
-                                    <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
-                                        <option value="value1" selected>1,5 кг</option>
-                                        <option value="value2" >2 кг</option>
-                                        <option value="value3">500 г.</option>
-                                    </select>
-                                    <div class="flex max-w-[95px] items-center">
-                                        <button class="counter rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
-                                            <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
-                                            </svg>
-                                        </button>
-                                        <input readonly  type="text" class="w-full h-[25px] text-center" value="1">
-                                        <button class="counter counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
-                                            </svg>
-                                        </button>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="flex flex-col gap-[20px]">
-                                <div class="">
-                                    <div class="flex items-center gap-[4px] mb-[10px]">
-                                        <p class="text-[16px]">2 675 ₽</p>
-                                        <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                        <!--                    Можно удалить-->
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
                                     </div>
-                                    <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="flex items-center justify-between gap-[5px]">
-                                    <button class="py-[10px] min-h-[40px] text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
-                                    <button class="py-[10px] min-h-[40px] px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
 
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-<!--                    Можно удалить-->
-                    <div class="swiper-slide">
-                        <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
-                            <button class="absolute top-[26px] right-[23px]">
-                                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
-                                </svg>
-                            </button>
-                            <div class="flex flex-col gap-y-[20px]">
-                                <div class="w-full flex justify-center">
-                                    <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
-                                </div>
-                                <h3>Горячий шоколад Van Houten Special Bar</h3>
-                                <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
-                                <div class="flex justify-between gap-[5px] items-center">
-                                    <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
-                                        <option value="value1" selected>1,5 кг</option>
-                                        <option value="value2" >2 кг</option>
-                                        <option value="value3">500 г.</option>
-                                    </select>
-                                    <div class="flex max-w-[95px] items-center">
-                                        <button class="counter rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
-                                            <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
-                                            </svg>
-                                        </button>
-                                        <input readonly  type="text" class="w-full h-[25px] text-center" value="1">
-                                        <button class="counter counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col gap-[20px]">
-                                <div class="">
-                                    <div class="flex items-center gap-[4px] mb-[10px]">
-                                        <p class="text-[16px]">2 675 ₽</p>
-                                        <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
-                                    </div>
-                                    <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
-                                </div>
-                                <div class="flex items-center justify-between gap-[5px]">
-                                    <button class="py-[10px] min-h-[40px] text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
-                                    <button class="py-[10px] min-h-[40px] px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
-                            <button class="absolute top-[26px] right-[23px]">
-                                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
-                                </svg>
-                            </button>
-                            <div class="flex flex-col gap-y-[20px]">
-                                <div class="w-full flex justify-center">
-                                    <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
-                                </div>
-                                <h3>Горячий шоколад Van Houten Special Bar</h3>
-                                <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
-                                <div class="flex justify-between gap-[5px] items-center">
-                                    <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
-                                        <option value="value1" selected>1,5 кг</option>
-                                        <option value="value2" >2 кг</option>
-                                        <option value="value3">500 г.</option>
-                                    </select>
-                                    <div class="flex max-w-[95px] items-center">
-                                        <button class="counter rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
-                                            <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
-                                            </svg>
-                                        </button>
-                                        <input readonly  type="text" class="w-full h-[25px] text-center" value="1">
-                                        <button class="counter counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col gap-[20px]">
-                                <div class="">
-                                    <div class="flex items-center gap-[4px] mb-[10px]">
-                                        <p class="text-[16px]">2 675 ₽</p>
-                                        <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
-                                    </div>
-                                    <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
-                                </div>
-                                <div class="flex items-center justify-between gap-[5px]">
-                                    <button class="py-[10px] min-h-[40px] text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
-                                    <button class="py-[10px] min-h-[40px] px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
-                            <button class="absolute top-[26px] right-[23px]">
-                                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
-                                </svg>
-                            </button>
-                            <div class="flex flex-col gap-y-[20px]">
-                                <div class="w-full flex justify-center">
-                                    <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
-                                </div>
-                                <h3>Горячий шоколад Van Houten Special Bar</h3>
-                                <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
-                                <div class="flex justify-between gap-[5px] items-center">
-                                    <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
-                                        <option value="value1" selected>1,5 кг</option>
-                                        <option value="value2" >2 кг</option>
-                                        <option value="value3">500 г.</option>
-                                    </select>
-                                    <div class="flex max-w-[95px] items-center">
-                                        <button class="counter rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
-                                            <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
-                                            </svg>
-                                        </button>
-                                        <input readonly  type="text" class="w-full h-[25px] text-center" value="1">
-                                        <button class="counter counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col gap-[20px]">
-                                <div class="">
-                                    <div class="flex items-center gap-[4px] mb-[10px]">
-                                        <p class="text-[16px]">2 675 ₽</p>
-                                        <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
-                                    </div>
-                                    <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
-                                </div>
-                                <div class="flex items-center justify-between gap-[5px]">
-                                    <button class="py-[10px] min-h-[40px] text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
-                                    <button class="py-[10px] min-h-[40px] px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
-                            <button class="absolute top-[26px] right-[23px]">
-                                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
-                                </svg>
-                            </button>
-                            <div class="flex flex-col gap-y-[20px]">
-                                <div class="w-full flex justify-center">
-                                    <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
-                                </div>
-                                <h3>Горячий шоколад Van Houten Special Bar</h3>
-                                <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
-                                <div class="flex justify-between gap-[5px] items-center">
-                                    <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
-                                        <option value="value1" selected>1,5 кг</option>
-                                        <option value="value2" >2 кг</option>
-                                        <option value="value3">500 г.</option>
-                                    </select>
-                                    <div class="flex max-w-[95px] items-center">
-                                        <button class="counter rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
-                                            <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
-                                            </svg>
-                                        </button>
-                                        <input readonly  type="text" class="w-full h-[25px] text-center" value="1">
-                                        <button class="counter counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col gap-[20px]">
-                                <div class="">
-                                    <div class="flex items-center gap-[4px] mb-[10px]">
-                                        <p class="text-[16px]">2 675 ₽</p>
-                                        <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
-                                    </div>
-                                    <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
-                                </div>
-                                <div class="flex items-center justify-between gap-[5px]">
-                                    <button class="py-[10px] min-h-[40px] text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
-                                    <button class="py-[10px] min-h-[40px] px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="new-products">
+        <div class="py-[35px] pb-[35px]">
+            <div class="flex container justify-between items-center gap-[5px]">
+                <h2 class="mb-[30px]">Новые поступления</h2>
+                <div class="flex items-center gap-[14px]">
+                    <button class="nav-btn shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] flex justify-center items-center product-nav__prev">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="btn__prev" d="M2.89633 5.6707L8.44668 0.1357C8.62853 -0.0455414 8.92295 -0.0452367 9.1045 0.136638C9.28591 0.318488 9.28544 0.613073 9.10356 0.794455L3.88358 6.00002L9.10375 11.2056C9.2856 11.387 9.28607 11.6814 9.10469 11.8632C9.01368 11.9544 8.89445 12 8.77523 12C8.65631 12 8.53755 11.9547 8.44671 11.8642L2.89633 6.32932C2.80874 6.24218 2.7596 6.12358 2.7596 6.00002C2.7596 5.87646 2.80889 5.75801 2.89633 5.6707Z" fill="#2E140E"/>
+                        </svg>
+                    </button>
+                    <button class="nav-btn shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] flex justify-center items-center product-nav__next">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="btn__next" d="M9.10367 5.6707L3.55332 0.1357C3.37147 -0.0455414 3.07705 -0.0452367 2.8955 0.136638C2.71409 0.318488 2.71456 0.613073 2.89644 0.794455L8.11642 6.00002L2.89625 11.2056C2.7144 11.387 2.71393 11.6814 2.89531 11.8632C2.98632 11.9544 3.10555 12 3.22477 12C3.34369 12 3.46245 11.9547 3.55329 11.8642L9.10367 6.32932C9.19126 6.24218 9.2404 6.12358 9.2404 6.00002C9.2404 5.87646 9.19111 5.75801 9.10367 5.6707Z" fill="#2E140E"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="pl-[142px] mt-[30px] relative">
+                <div class="absolute top-0 right-0 z-[100] w-[142px] h-[100%] bg-gradient-to-r from-transparent to-white/60">
+                </div>
+                <div class="swiper products-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    Можно удалить-->
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info py-[66.5px] bg-[#2E140E]">
+        <div class="container">
+            <div class="">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="task pb-[35px]">
+        <div class="pl-[152px]">
+            <div class="task-container flex justify-between items-center gap-[40px]">
+                <div class="task-item">
+                    <h3 class="text-[26px] font-bold mb-[20px]">Все для кондитеров и ценителей превосходного шоколада!</h3>
+                    <p>
+                        Наша задача — сделать доступной продукцию, которой пользуются лучшие шеф-кондитеры мира и для этого мы предоставим все ингредиенты, сопутствующие товары и экспертизу для изготовления шедевров.
+                    </p>
+                </div>
+                <div class="task-item">
+                    <img src="./images/example/task.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recently-products">
+        <div class="py-[35px] pb-[35px]">
+            <div class="flex container justify-between items-center gap-[5px]">
+                <h2 class="mb-[30px]">Недавно вы смотрели</h2>
+                <div class="flex items-center gap-[14px]">
+                    <button class="nav-btn shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] flex justify-center items-center recently-nav__prev">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="btn__prev" d="M2.89633 5.6707L8.44668 0.1357C8.62853 -0.0455414 8.92295 -0.0452367 9.1045 0.136638C9.28591 0.318488 9.28544 0.613073 9.10356 0.794455L3.88358 6.00002L9.10375 11.2056C9.2856 11.387 9.28607 11.6814 9.10469 11.8632C9.01368 11.9544 8.89445 12 8.77523 12C8.65631 12 8.53755 11.9547 8.44671 11.8642L2.89633 6.32932C2.80874 6.24218 2.7596 6.12358 2.7596 6.00002C2.7596 5.87646 2.80889 5.75801 2.89633 5.6707Z" fill="#2E140E"/>
+                        </svg>
+                    </button>
+                    <button class="nav-btn shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] flex justify-center items-center recently-nav__next">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="btn__next" d="M9.10367 5.6707L3.55332 0.1357C3.37147 -0.0455414 3.07705 -0.0452367 2.8955 0.136638C2.71409 0.318488 2.71456 0.613073 2.89644 0.794455L8.11642 6.00002L2.89625 11.2056C2.7144 11.387 2.71393 11.6814 2.89531 11.8632C2.98632 11.9544 3.10555 12 3.22477 12C3.34369 12 3.46245 11.9547 3.55329 11.8642L9.10367 6.32932C9.19126 6.24218 9.2404 6.12358 9.2404 6.00002C9.2404 5.87646 9.19111 5.75801 9.10367 5.6707Z" fill="#2E140E"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="pl-[142px] mt-[30px] relative">
+                <div class="absolute top-0 right-0 z-[100] w-[142px] h-[100%] bg-gradient-to-r from-transparent to-white/60">
+                </div>
+                <div class="swiper recently-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    Можно удалить-->
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide max-w-[420px]">
+                            <div class="relative py-[60px] px-[21px] border-[1px] border-[#F5F5F5] rounded-[10px] flex flex-col gap-y-[5px] justify-between min-h-[730px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)]">
+                                <button class="liked__btn absolute top-[26px] right-[23px] cursor-pointer">
+                                    <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"/>
+                                    </svg>
+                                    <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                                <div class="flex flex-col gap-y-[20px]">
+                                    <div class="w-full flex justify-center">
+                                        <img class="w-full !max-w-[167px] object-cover" src="/images/example/product.png" alt="">
+                                    </div>
+                                    <h3 class="max-w-[300px]">Горячий шоколад Van Houten Special Bar</h3>
+                                    <p>Горячий шоколад Van Houten Spécial Bar содержит 50% шоколада, что придает ему оригинальный вкус!</p>
+                                    <div class="flex justify-between gap-[5px] pr-[46px] items-center">
+                                        <select name="select" class="product__select text-[18px] !w-[87px] h-[37px] py-[5px] px-[10px] rounded-[5px] border border-[#717171] ">
+                                            <option value="value1" selected>1,5 кг</option>
+                                            <option value="value2" >2 кг</option>
+                                            <option value="value3">500 г.</option>
+                                        </select>
+                                        <div class="counter-container flex max-w-[95px] items-center">
+                                            <button class="counter--minus counter cursor-pointer rounded-[5px] flex-shrink-0 border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 0.400058H6.60004C6.93127 0.400058 7.17969 0.399983 6.60004 0.400058C6.26891 0.400058 6.61719 0.400058 5.4 0.400121L0.599963 0.400058C0.268836 0.400058 0 0.668893 0 1.00002C0 1.33126 0.268836 1.60009 0.599963 1.60009H5.4C6.34766 1.60009 5.66887 1.60009 6 1.60009C6.33124 1.60009 5.86719 1.60009 6.60004 1.60009H11.4C11.7312 1.60009 12 1.33126 12 1.00002C12 0.668893 11.7312 0.400058 11.4 0.400058Z" fill="#C7C7C7"/>
+                                                </svg>
+                                            </button>
+                                            <input readonly  type="text" class="product__input w-full cursor-default h-[25px] text-center" value="1">
+                                            <button class="counter--plus counter cursor-pointer counter--active flex-shrink-0 rounded-[5px] border border-[#c6c6c6] w-[25px] h-[25px] flex justify-center items-center items-center">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4 5.4H6.60004V0.599963C6.60004 0.268835 6.3312 0 5.99996 0C5.66884 0 5.4 0.268835 5.4 0.599963V5.4H0.599963C0.268835 5.4 0 5.66884 0 5.99996C0 6.3312 0.268835 6.60004 0.599963 6.60004H5.4V11.4C5.4 11.7312 5.66884 12 5.99996 12C6.3312 12 6.60004 11.7312 6.60004 11.4V6.60004H11.4C11.7312 6.60004 12 6.3312 12 5.99996C12 5.66884 11.7312 5.4 11.4 5.4Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="">
+                                        <div class="flex items-center gap-[4px] mb-[10px]">
+                                            <p class="text-[16px]">2 675 ₽</p>
+                                            <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">-15%</p>
+                                        </div>
+                                        <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                    </div>
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">В корзину</button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">Подробнее</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="flex container justify-between items-center gap-[5px]">
+            <h2 class="mb-[30px]">Недавно вы смотрели</h2>
+            <div class="flex items-center gap-[14px]">
+                <button class="nav-btn shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] flex justify-center items-center reviews-nav__prev">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="btn__prev" d="M2.89633 5.6707L8.44668 0.1357C8.62853 -0.0455414 8.92295 -0.0452367 9.1045 0.136638C9.28591 0.318488 9.28544 0.613073 9.10356 0.794455L3.88358 6.00002L9.10375 11.2056C9.2856 11.387 9.28607 11.6814 9.10469 11.8632C9.01368 11.9544 8.89445 12 8.77523 12C8.65631 12 8.53755 11.9547 8.44671 11.8642L2.89633 6.32932C2.80874 6.24218 2.7596 6.12358 2.7596 6.00002C2.7596 5.87646 2.80889 5.75801 2.89633 5.6707Z" fill="#2E140E"/>
+                    </svg>
+                </button>
+                <button class="nav-btn shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] flex justify-center items-center reviews-nav__next">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="btn__next" d="M9.10367 5.6707L3.55332 0.1357C3.37147 -0.0455414 3.07705 -0.0452367 2.8955 0.136638C2.71409 0.318488 2.71456 0.613073 2.89644 0.794455L8.11642 6.00002L2.89625 11.2056C2.7144 11.387 2.71393 11.6814 2.89531 11.8632C2.98632 11.9544 3.10555 12 3.22477 12C3.34369 12 3.46245 11.9547 3.55329 11.8642L9.10367 6.32932C9.19126 6.24218 9.2404 6.12358 9.2404 6.00002C9.2404 5.87646 9.19111 5.75801 9.10367 5.6707Z" fill="#2E140E"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="pl-[142px] pt-[35px] pb-[42px] relative">
+            <div class="absolute top-0 right-0 z-[100] w-[142px] h-[100%] bg-gradient-to-r from-transparent to-white/60">
+            </div>
+            <div class="swiper reviews-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide max-w-[560px] min-h-[280px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] bg-[#F5F5F5] py-[26px] px-[30px] rounded-[10px]">
+                        <h4 class="mb-[7px] text-[20px] font-bold">Иван Иванов</h4>
+                        <p class="mb-[13px] text-[16px]">г. Новосибирск</p>
+                        <p class="text-[#727272] text-[14px]">Текст отзыва на несколько строк</p>
+                    </div>
+
+                    <div class="swiper-slide max-w-[560px] min-h-[280px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] bg-[#F5F5F5] py-[26px] px-[30px] rounded-[10px]">
+                        <h4 class="mb-[7px] text-[20px] font-bold">Иван Иванов</h4>
+                        <p class="mb-[13px] text-[16px]">г. Новосибирск</p>
+                        <p class="text-[#727272] text-[14px]">Текст отзыва на несколько строк</p>
+                    </div>
+
+                    <div class="swiper-slide max-w-[560px] min-h-[280px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] bg-[#F5F5F5] py-[26px] px-[30px] rounded-[10px]">
+                        <h4 class="mb-[7px] text-[20px] font-bold">Иван Иванов</h4>
+                        <p class="mb-[13px] text-[16px]">г. Новосибирск</p>
+                        <p class="text-[#727272] text-[14px]">Текст отзыва на несколько строк</p>
+                    </div>
+
+                    <div class="swiper-slide max-w-[560px] min-h-[280px] shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] bg-[#F5F5F5] py-[26px] px-[30px] rounded-[10px]">
+                        <h4 class="mb-[7px] text-[20px] font-bold">Иван Иванов</h4>
+                        <p class="mb-[13px] text-[16px]">г. Новосибирск</p>
+                        <p class="text-[#727272] text-[14px]">Текст отзыва на несколько строк</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#2E140E] !py-[82px] pl-[170px]">
+        <div class="flex justify-between gap-[10px]">
+            <div class="">
+                <div class="mb-[36px]">
+                    <img src="./images/logo.svg" alt="">
+                </div>
+                <div class="flex gap-[58px] mb-[14px]">
+                    <div class="flex flex-col items-center gap-[14px]">
+                        <a class="text-[16px] text-[#F4F3F3]" href="tel:+7 (905) 950 06 60">+7 (905) 950 06 60</a>
+                        <a class="text-[16px] text-[#F4F3F3]" href="mailto:sales@chocolatnsk.ru">sales@chocolatnsk.ru</a>
+                    </div>
+                    <div class="flex items-center gap-[17px]">
+                        <a href="">
+                            <svg width="42" height="26" viewBox="0 0 42 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.641 24.3432V17.6109C29.2154 18.3003 30.6615 21.8591 33.5744 24.3432H41C39.1435 20.246 36.3735 16.6169 32.8974 13.7277C35.5641 10.0979 38.3949 6.68104 39.7795 1.5H33.0308C30.3846 5.46436 28.9897 10.108 24.641 13.17V1.5H14.8462L17.1846 4.3592V14.5489C13.3897 14.1129 10.8256 7.24882 8.04615 1.5H1C3.5641 9.26649 8.95897 26.3102 24.641 24.3432Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.2075 1.01438C28.8994 0.756933 28.528 0.588332 28.1327 0.526454C27.7373 0.464576 27.3327 0.511727 26.9618 0.662908L1.36642 11.0818C0.952817 11.2532 0.600686 11.5473 0.356776 11.9252C0.112867 12.3032 -0.0112836 12.7469 0.000806048 13.1977C0.0128957 13.6484 0.160654 14.0848 0.424464 14.4488C0.688275 14.8129 1.05566 15.0875 1.47785 15.2361L7.00063 17.1692L9.99345 27.1458C9.99916 27.166 10.0177 27.1789 10.0263 27.1977C10.0571 27.2773 10.1022 27.3505 10.1592 27.4137C10.2458 27.5113 10.3575 27.5826 10.482 27.6197C10.4963 27.6255 10.5063 27.6384 10.5206 27.6413H10.5292L10.5334 27.6428C10.644 27.6667 10.7588 27.6608 10.8663 27.6255C10.8777 27.6226 10.8891 27.6226 10.902 27.6183C11.0052 27.5818 11.0986 27.5216 11.1749 27.4425C11.1834 27.4325 11.1977 27.431 11.2063 27.4224L15.5105 22.6314L21.7919 27.5362C22.1733 27.8372 22.6433 28 23.1275 28C24.1761 28 25.0804 27.2596 25.2961 26.2268L29.956 3.15347C30.0351 2.76177 30.0072 2.35578 29.8754 1.97881C29.7435 1.60183 29.5127 1.26801 29.2075 1.01294M11.5549 19.0634L10.5449 24.0142L8.43775 16.9877L18.8876 11.4995L11.7491 18.6989C11.6503 18.7985 11.5827 18.9253 11.5549 19.0634ZM23.8961 25.9373C23.8693 26.0679 23.8096 26.1893 23.7228 26.29C23.636 26.3906 23.525 26.4671 23.4004 26.512C23.2789 26.5592 23.1473 26.5736 23.0185 26.5539C22.8898 26.5342 22.7683 26.481 22.6661 26.3996L15.8619 21.0858C15.7197 20.9751 15.5413 20.9225 15.3623 20.9385C15.1833 20.9545 15.0169 21.038 14.8962 21.1722L11.9006 24.5011L12.9091 19.5647L23.179 9.20773C23.2992 9.08606 23.3724 8.92505 23.3853 8.75375C23.3982 8.58246 23.3499 8.41216 23.2492 8.27359C23.1485 8.13502 23.002 8.03731 22.8362 7.99808C22.6703 7.95886 22.496 7.98071 22.3447 8.05968L7.54062 15.8353L1.94499 13.8734C1.79662 13.824 1.66722 13.7292 1.57479 13.6021C1.48236 13.4751 1.4315 13.3222 1.42928 13.1647C1.42216 13.0058 1.46427 12.8485 1.54977 12.7148C1.63527 12.5811 1.75991 12.4776 1.90642 12.4185L27.4975 1.99966C27.6286 1.94347 27.7727 1.9253 27.9135 1.94719C28.0544 1.96907 28.1863 2.03015 28.2946 2.12354C28.4023 2.21139 28.4836 2.32769 28.5295 2.45945C28.5754 2.59121 28.5841 2.73325 28.5546 2.8697L23.8961 25.9373Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-[24px]">
+                    <a class="text-[16px] text-[#F4F3F3]" href="">Заказать звонок</a>
+                    <p class="text-[16px] !text-[#F4F3F3]">© 2024 ШоколадНСК, все права защищены</p>
+                </div>
+            </div>
+
+            <ul class="flex flex-col gap-[20px]">
+               <li>
+                   <a class="text-[16px] text-[#F4F3F3]" href="">Каталог</a>
+               </li>
+                <li>
+                    <a class="text-[16px] text-[#F4F3F3]" href="">Акции</a>
+                </li>
+                <li>
+                    <a class="text-[16px] text-[#F4F3F3]" href="">Бренды</a>
+                </li>
+                <li>
+                    <a class="text-[16px] text-[#F4F3F3]" href="">Доставка и оплата</a>
+                </li>
+                <li>
+                    <a class="text-[16px] text-[#F4F3F3]" href="">Блог</a>
+                </li>
+                <li>
+                    <a class="text-[16px] text-[#F4F3F3]" href="">Контакты</a>
+                </li>
+            </ul>
+
+            <div class="flex flex-col gap-[47px]">
+                <div class="flex flex-col gap-[24px]">
+                    <p class="text-[16px] pl-[20px] !text-[#F4F3F3]">Подпишитесь на новинки и акции</p>
+                    <div class="footer-input__container flex items-center bg-[#C3CAD9] bg-[#FFFFFF] border-[1px] border-[#2E140E] w-[430px] justify-between rounded-[30px] p-[5px]">
+                        <input class="w-full h-full focus:outline-none px-[48px]" type="text">
+                        <button class="py-[14px] px-[33px] bg-[#2E140E] text-[#FFFFFF] rounded-[30px]">Подписаться</button>
+                    </div>
+                </div>
+                <ul class="pl-[20px] flex flex-col gap-[15px]">
+                    <li>
+                        <a class="text-[16px] text-[#F4F3F3]" href="">Обработка персональных данных</a>
+                    </li>
+                    <li>
+                        <a class="text-[16px] text-[#F4F3F3]" href="">Правила продажи и реквизиты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </main>
 </body>
 </html>

@@ -59,7 +59,7 @@ h2,
 h3,
 h4,
 p {
-    margin: 0;
+    /*margin: 0;*/
     color: var(--text-color);
 }
 
@@ -181,3 +181,42 @@ a:active {
     background: #2e140e;;
 }
 /**/
+
+/* product liked */
+.liked__active {
+    display: none;
+}
+
+.liked__btn--active .liked__disable {
+    display: none;
+}
+
+.liked__btn--active .liked__active {
+    display: block;
+}
+
+/* info */
+
+
+/* task */
+
+.task-item {
+    width: calc(50% - 40px);
+}
+
+/* footer */
+
+.footer-input__container {
+    position: relative;
+}
+
+.footer-input__container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 16px;
+    height: 12px;
+    background-image: url('/images/email-icon.svg');
+}
