@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     })
 
-    const productSlider = new Swiper('. products-slider', {
+    const productSlider = new Swiper('.products-slider', {
         slidesPerView: 3,
         freeMode: true,
         spaceBetween: 20,

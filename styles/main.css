@@ -70,7 +70,7 @@ h1 {
 
 h2 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 45px;
     letter-spacing: 0em;
     color: #2E140E;
@@ -78,7 +78,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 30px;
     letter-spacing: 0em;
     color: #2E140E;
@@ -161,4 +161,23 @@ a:active {
     position: relative;
 }
 
+/**/
+
+/* products */
+.product__select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('/images/arrow.svg'); /* Добавляем кастомную стрелку */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.counter--active {
+    background: #2e140e;;
+}
 /**/
