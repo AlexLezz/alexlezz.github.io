@@ -51,6 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    const catalogSlider = new Swiper('.catalog-slider', {
+        slidesPerView: 6,
+        spaceBetween: 67,
+        navgation: {
+            nextEl: '.master-nav__next',
+            prevEl: '.master-nav__prev',
+        }
+    })
+
 // Кнопки "Любимое"
 
     const likedBtns = document.querySelectorAll('.liked__btn');

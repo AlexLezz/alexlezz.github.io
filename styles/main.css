@@ -123,6 +123,11 @@ a:active {
     margin: 0 auto;
 }
 
+.breadcrumbs {
+    max-width: 1618px;
+    margin: 0 auto;
+}
+
 *,
 *::before,
 *::after {
@@ -279,4 +284,73 @@ a:active {
     width: 16px;
     height: 12px;
     background-image: url('/images/email-icon.svg');
+}
+
+/* Catalog */
+.catalog__img {
+    clip-path: ellipse(60% 85% at 50% 0%);
+}
+
+.range-slider {
+    position: relative;
+    width: 300px;
+    margin: 20px 0;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    -webkit-appearance: none; /* Отключаем стандартные стили */
+    appearance: none;
+    background: transparent; /* Прозрачный фон */
+    pointer-events: none;
+}
+
+/* Стилизация трека (строчки) */
+.slider::-webkit-slider-runnable-track {
+    height: 1px;
+    background: #2E140E;
+    border-radius: 5px;
+}
+
+.slider::-moz-range-track {
+    height: 1px;
+    background: #2E140E;
+    border-radius: 5px;
+}
+
+/* Стилизация ползунков (точек) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    position: relative;
+    z-index: 10;
+    height: 14px;
+    border: 1px solid #2E140E;
+    background: white;
+    border-radius: 100%;
+    cursor: pointer;
+    pointer-events: all;
+    margin-top: -6px;
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    position: relative;
+    z-index: 10;
+    height: 14px;
+    border: 1px solid #2E140E;
+    background: white;
+    border-radius: 100%;
+    cursor: pointer;
+    pointer-events: all;
+    margin-top: -6px;
+}
+
+/* Стилизация выделенной области между ползунками */
+.range-slider {
+    position: relative;
 }
