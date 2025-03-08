@@ -197,6 +197,66 @@ a:active {
 
 /* info */
 
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 10px;
+    width: 100%;
+}
+
+.info-grid-item {
+    border-radius: 10px;
+    border: 1px solid #787878;
+    padding: 20px;
+}
+
+.info-grid-item h4 {
+    color: #F6EFE2;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.info-grid-item p {
+    color: #F6EFE2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.info-grid-item a {
+    color: #F6EFE2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.info-grid-item:nth-child(1) {
+    grid-row: span 2; /* Первая колонка занимает 2 строки */
+    grid-column: span 1; /* Остаётся в одной колонке */
+}
+
+.info-grid-item:nth-child(2) {
+    grid-row: span 3; /* Вторая колонка занимает 3 строки */
+    grid-column: span 1;
+}
+
+.info-grid-item:nth-child(3) {
+    grid-row: span 2; /* Третья колонка занимает 3 строки */
+    grid-column: span 1;
+}
+
+/* Добавь для следующих элементов по аналогии */
+
 
 /* task */
 

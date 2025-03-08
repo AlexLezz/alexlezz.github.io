@@ -41,6 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    const masterSlider = new Swiper('.master-slider', {
+        slidesPerView: 3,
+        freeMode: true,
+        spaceBetween: 20,
+        navgation: {
+            nextEl: '.master-nav__next',
+            prevEl: '.master-nav__prev',
+        }
+    })
 
 // Кнопки "Любимое"
 
