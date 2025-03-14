@@ -145,7 +145,6 @@ a:active {
 
 .nav-btn::after {
     font-size: 9px !important;
-
 }
 
 /* header */
@@ -353,4 +352,18 @@ a:active {
 /* Стилизация выделенной области между ползунками */
 .range-slider {
     position: relative;
+}
+
+/*product page*/
+
+.product-page__item {
+    width: calc(50% - 129px);
+}
+
+.product-slider--thumbs {
+    .swiper-slide-active {
+        .product-thumbs__item {
+            border-color: #C2C99F !important;
+        }
+    }
 }

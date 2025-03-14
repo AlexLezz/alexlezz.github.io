@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     })
 
-    const productSlider = new Swiper('.products-slider', {
+    const productsSlider = new Swiper('.products-slider', {
         slidesPerView: 3,
         freeMode: true,
         spaceBetween: 20,
@@ -57,6 +57,23 @@ document.addEventListener('DOMContentLoaded', () => {
         navgation: {
             nextEl: '.master-nav__next',
             prevEl: '.master-nav__prev',
+        }
+    })
+
+    const productThumbsSlider = new Swiper('.product-slider--thumbs', {
+        slidesPerView: 5,
+        spaceBetween: 34,
+        direction: 'vertical'
+    })
+
+    const productSlider = new Swiper('.product-slider', {
+        slidesPerView: 1,
+        navgation: {
+            nextEl: '.master-nav__next',
+            prevEl: '.master-nav__prev',
+        },
+        thumbs: {
+            swiper: productThumbsSlider,
         }
     })
 
