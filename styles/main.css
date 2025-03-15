@@ -391,3 +391,9 @@ a:active {
     border: 1px solid #2E140E !important;
     display: block !important;
 }
+
+/* brand*/
+
+.brand__item {
+    width: calc(25% - 20px);
+}
