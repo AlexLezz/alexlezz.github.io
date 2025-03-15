@@ -2,7 +2,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 document.addEventListener('DOMContentLoaded', () => {
     const bannerSlider = new Swiper('.banner-slider', {
-        navgation: {
+        navigation: {
             nextEl: '.banner-button-next',
             prevEl: 'banner-button-prev',
         },
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 3,
         freeMode: true,
         spaceBetween: 20,
-        navgation: {
+        navigation: {
             nextEl: '.product-nav__next',
             prevEl: '.product-nav__prev',
         }
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 3,
         freeMode: true,
         spaceBetween: 20,
-        navgation: {
+        navigation: {
             nextEl: '.recently-nav__next',
             prevEl: '.recently-nav__prev',
         }
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 3,
         freeMode: true,
         spaceBetween: 20,
-        navgation: {
+        navigation: {
             nextEl: '.reviews-nav__next',
             prevEl: '.reviews-nav__prev',
         }
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 3,
         freeMode: true,
         spaceBetween: 20,
-        navgation: {
+        navigation: {
             nextEl: '.master-nav__next',
             prevEl: '.master-nav__prev',
         }
@@ -54,9 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const catalogSlider = new Swiper('.catalog-slider', {
         slidesPerView: 6,
         spaceBetween: 67,
-        navgation: {
+        navigation: {
             nextEl: '.master-nav__next',
             prevEl: '.master-nav__prev',
+        }
+    })
+
+    const promoSlider = new Swiper('.promo-slider', {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.promo-nav__next',
+            prevEl: '.promo-nav__prev',
         }
     })
 
@@ -68,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const productSlider = new Swiper('.product-slider', {
         slidesPerView: 1,
-        navgation: {
+        navigation: {
             nextEl: '.master-nav__next',
             prevEl: '.master-nav__prev',
         },
