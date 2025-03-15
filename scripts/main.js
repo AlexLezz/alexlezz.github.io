@@ -68,6 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    const masterSliderPage = new Swiper('.master-slider-page', {
+        slidesPerView: 3,
+        spaceBetween: 19,
+        navigation: {
+            nextEl: '.master-page-nav__next',
+            prevEl: '.master-page-nav__prev',
+        }
+    })
+
     const productThumbsSlider = new Swiper('.product-slider--thumbs', {
         slidesPerView: 5,
         spaceBetween: 34,
