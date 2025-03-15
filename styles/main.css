@@ -372,3 +372,22 @@ a:active {
 .making-order__item {
     width: calc(50% - 11px);
 }
+
+/* Delivery */
+
+.delivery-nav--item:first-child {
+    width: calc(45% - 10px);
+}
+
+.delivery-nav--item:nth-child(2) {
+    width: calc(20% - 10px);
+}
+
+.delivery-nav--item:last-child {
+    width: calc(35% - 10px);
+}
+
+.delivery--active {
+    border: 1px solid #2E140E !important;
+    display: block !important;
+}
