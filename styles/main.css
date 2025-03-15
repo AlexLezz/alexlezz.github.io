@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Manrope";
     src: local("Manrope-Bold"),
-    url("../fonts/Manrope-Bold.woff2") format("woff2"),
-    url("../fonts/Manrope-Bold.woff") format("woff");
+    url("/fonts/Manrope-Bold.woff2") format("woff2"),
+    url("/fonts/Manrope-Bold.woff") format("woff");
     font-weight: 700;
     font-display: swap;
 }
@@ -10,8 +10,8 @@
 @font-face {
     font-family: "Manrope";
     src: local("Manrope-ExtraBold"),
-    url("../fonts/Manrope-ExtraBold.woff2") format("woff2"),
-    url("../fonts/Manrope-ExtraBold.woff") format("woff");
+    url("/fonts/Manrope-ExtraBold.woff2") format("woff2"),
+    url("/fonts/Manrope-ExtraBold.woff") format("woff");
     font-weight: 800;
     font-display: swap;
 }
@@ -19,8 +19,8 @@
 @font-face {
     font-family: "Manrope";
     src: local("Manrope-Medium"),
-    url("../fonts/Manrope-Medium.woff2") format("woff2"),
-    url("../fonts/Manrope-Medium.woff") format("woff");
+    url("/fonts/Manrope-Medium.woff2") format("woff2"),
+    url("/fonts/Manrope-Medium.woff") format("woff");
     font-weight: 500;
     font-display: swap;
 }
@@ -28,8 +28,8 @@
 @font-face {
     font-family: "Manrope";
     src: local("Manrope-Regular"),
-    url("../fonts/Manrope-Regular.woff2") format("woff2"),
-    url("../fonts/Manrope-Regular.woff") format("woff");
+    url("/fonts/Manrope-Regular.woff2") format("woff2"),
+    url("/fonts/Manrope-Regular.woff") format("woff");
     font-weight: 400;
     font-display: swap;
 }
@@ -366,4 +366,9 @@ a:active {
             border-color: #C2C99F !important;
         }
     }
+}
+
+/* making order */
+.making-order__item {
+    width: calc(50% - 11px);
 }
