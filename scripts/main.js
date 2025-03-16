@@ -13,11 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const productsSlider = new Swiper('.products-slider', {
         slidesPerView: 3,
-        freeMode: true,
+        loop: true,
         spaceBetween: 20,
         navigation: {
             nextEl: '.product-nav__next',
             prevEl: '.product-nav__prev',
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            0: {
+                slidesPerView: 0,
+            }
         }
     })
 
@@ -38,6 +49,17 @@ document.addEventListener('DOMContentLoaded', () => {
         navigation: {
             nextEl: '.reviews-nav__next',
             prevEl: '.reviews-nav__prev',
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            0: {
+                slidesPerView: 1,
+            }
         }
     })
 

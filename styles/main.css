@@ -318,6 +318,12 @@ a:active {
     width: calc(50% - 40px);
 }
 
+@media (max-width: 768px) {
+    .task-item {
+        width: 100%;
+    }
+}
+
 /* footer */
 
 .footer-input__container {
