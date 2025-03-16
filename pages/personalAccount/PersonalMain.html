@@ -223,11 +223,384 @@
                 </button>
             </div>
 <!--            Заказы-->
+            <div class="container pt-[62px]">
+                <div class="flex items-center gap-[40px]">
+                    <div class="flex items-center gap-[10px]">
+                        <p class="text-[#2E140E] text-[18px]">Текущие заказы</p>
+                        <button class="w-[18px] text-[10px] h-[18px] bg-[#727272] text-white rounded-full">
+                            1
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-[10px]">
+                        <p class="text-[#2E140E] text-[18px]">Выполненные заказы</p>
+                        <button class="w-[18px] text-[10px] h-[18px] bg-[#727272] text-white rounded-full">
+                            1
+                        </button>
+                    </div>
+                </div>
+                <div class="">
+                    <table class="border-collapse border-spacing-[100px]">
+                        <thead>
+                        <tr>
+                            <th class="text-[14px] text-[#727272] font-normal text-start">Номер заказа</th>
+                            <th class="text-[14px] text-[#727272] font-normal text-start">Дата</th>
+                            <th class="text-[14px] text-[#727272] font-normal text-start">Статус</th>
+                            <th class="text-[14px] text-[#727272] font-normal text-start">Способ оплаты</th>
+                            <th class="text-[14px] text-[#727272] font-normal text-start">Сумма</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="personal-table relative">
+                            <td class="min-w-[170px] text-[16px]">Заказ №3</td>
+                            <td class="min-w-[170px] text-[16px]">01.05.2024</td>
+                            <td class="min-w-[170px] text-[16px] font-extrabold">Отгружен</td>
+                            <td class="min-w-[170px] text-[16px]">Банковская карта</td>
+                            <td class="min-w-[170px] text-[16px] font-extrabold">3099 ₽</td>
+                            <td class="flex flex-col items-center gap-[10px]">
+                                <button class="py-[8px] min-h-[40px] w-full px-[18px] rounded-[30px] border border-[#2e140e]">
+                                    Повторить
+                                </button>
+                                <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">
+                                    Оплатить
+                                </button>
+                                <button data-personal="1" class="flex items-center gap-[15px]">
+                                    Состав
+                                    <svg class="arrow-none" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.6707 0.896376L0.1357 6.44673C-0.0455414 6.62858 -0.0452367 6.923 0.136638 7.10455C0.318488 7.28595 0.613073 7.28548 0.794455 7.10361L6.00002 1.88363L11.2056 7.1038C11.387 7.28565 11.6814 7.28612 11.8632 7.10473C11.9544 7.01373 12 6.8945 12 6.77527C12 6.65635 11.9547 6.5376 11.8642 6.44675L6.32932 0.896376C6.24218 0.80879 6.12358 0.759642 6.00002 0.759642C5.87646 0.759642 5.75801 0.808931 5.6707 0.896376Z" fill="#2E140E"/>
+                                    </svg>
+                                </button>
+                            </td>
+                            <td data-personal-content="1" class="!hidden w-full personal-table__item">
+                                <div class="flex gap-[40px] items-center min-w-[822px]">
+                                    <div class="max-w-[63px]">
+                                        <img src="/images/example/product.png" alt="">
+                                    </div>
+                                    <div class="flex items-center w-full gap-[96px]">
+                                        <div class="">
+                                            <p>Шоколад горький Carma Black Zabuye 83%</p>
+                                            <p>1 кг</p>
+                                        </div>
+                                        <div class="flex justify-between items-end gap-[5px]">
+                                            <div class="">
+                                                <div class="flex items-center gap-[4px] mb-[10px]">
+                                                    <p class="text-[16px]">2 675 ₽</p>
+                                                    <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">
+                                                        -15%</p>
+                                                </div>
+                                                <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
 
 
-<!--            -->
+                </div>
+            </div>
+<!--           Мой счет -->
+            <div class="container pt-[62px] flex flex-col gap-[30px]">
+                <div class="flex items-center gap-[58px]">
+                    <div class="flex flex-col gap-[15px]">
+                        <h3 class="text-[18px]">
+                            Баланс счета на 15.04.2024
+                        </h3>
+                        <p class="text-[26px] font-medium">
+                            0 ₽
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-[15px]">
+                        <h3 class="text-[18px]">
+                            Баланс баллов
+                        </h3>
+                        <p class="text-[26px] font-medium">
+                            150 б
+                        </p>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-[18px] mb-[13px]">
+                        Пополнение счета
+                    </h3>
+                    <div class="flex flex-col gap-[10px]">
+                        <h4 class="text-[14px]">
+                            Фиксированный платеж
+                        </h4>
+                        <div class="flex items-center gap-[6px] mb-[38px]">
+                            <button class="py-[5px] px-[17px] border-[1px] border-[#727272] rounded-[5px] text-[#2E140E] text-[18px] font-bold">
+                                100
+                            </button>
+                            <!--                        Ещё-->
+                            <button class="py-[5px] px-[17px] border-[1px] border-[#727272] rounded-[5px] text-[#2E140E] text-[18px] font-bold">
+                                200
+                            </button>
+                            <button class="py-[5px] px-[17px] border-[1px] border-[#727272] rounded-[5px] text-[#2E140E] text-[18px] font-bold">
+                                500
+                            </button>
+                            <button class="py-[5px] px-[17px] border-[1px] border-[#727272] rounded-[5px] text-[#2E140E] text-[18px] font-bold">
+                                1000
+                            </button>
+                            <button class="py-[5px] px-[17px] border-[1px] border-[#727272] rounded-[5px] text-[#2E140E] text-[18px] font-bold">
+                                5000
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="flex flex-col gap-[5px] max-w-[290px]">
+                        <label class="text-[12px] text-[#727272]" for="money">Cумма</label>
+                        <div class="bg-[#FAFAFA] rounded-[6px] border-[1px] border-[#DDDDDD] py-[5px] px-[10px] flex items-center min-h-[41px]">
+                            <input placeholder="0.00" class="w-full mr-[5px]" id="money" type="text">
+                            <p class="text-[14px]">₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-[18px] mb-[13px]">
+                        Способы оплаты
+                    </h3>
+
+                    <div class="flex flex-col gap-[23px]">
+                        <label class="flex items-center gap-[15px]">
+                            <input type="radio" name="account">
+                            <div class="custom-radio"></div>
+                            Картой онлайн
+                        </label>
+                        <label class="flex items-center gap-[15px]">
+                            <input type="radio" name="account">
+                            <div class="custom-radio"></div>
+                            Оплата по счету
+                        </label>
+                    </div>
+                </div>
+                <button class="py-[10px] min-h-[40px] font-bold w-full text-white px-[58px] bg-[#2e140e] max-w-[276px] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">
+                    Пополнить
+                </button>
+            </div>
+<!--         Профили   -->
+            <div class="container pt-[62px] flex flex-col gap-[30px]">
+                <table class="border-collapse border-spacing-[100px]">
+                    <thead>
+                    <tr>
+                        <th class="text-[14px] text-[#727272] font-normal text-start">Код</th>
+                        <th class="text-[14px] text-[#727272] font-normal text-start">Дата обновления</th>
+                        <th class="text-[14px] text-[#727272] font-normal text-start">Название</th>
+                        <th class="text-[14px] text-[#727272] font-normal text-start">Тип плательщика</th>
+                        <th class="text-[14px] text-[#727272] font-normal text-start">Действия</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="personal-table relative">
+                        <td class="min-w-[170px] text-[16px]">1</td>
+                        <td class="min-w-[170px] text-[16px]">01.05.2024 16:40:52</td>
+                        <td class="min-w-[170px] text-[16px] font-extrabold">Никита Соколов</td>
+                        <td class="min-w-[170px] text-[16px]">Физическое лицо</td>
+                        <td class="min-w-[170px] text-[16px]"><a href="" class="leading underline">Изменить</a></td>
+                        <td class="flex flex-col items-center gap-[10px]">
+                            <button>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.77344 7.00027L13.8398 0.933847C14.0534 0.720265 14.0534 0.373985 13.8398 0.16043C13.6262 -0.0531239 13.28 -0.0531513 13.0664 0.16043L6.99999 6.22685L0.933603 0.16043C0.720021 -0.0531513 0.37374 -0.0531513 0.160186 0.16043C-0.0533681 0.374012 -0.0533954 0.720293 0.160186 0.933847L6.22658 7.00024L0.160186 13.0667C-0.0533954 13.2802 -0.0533954 13.6265 0.160186 13.8401C0.266963 13.9469 0.406936 14.0002 0.546908 14.0002C0.686881 14.0002 0.826826 13.9469 0.93363 13.8401L6.99999 7.77368L13.0664 13.8401C13.1732 13.9469 13.3131 14.0002 13.4531 14.0002C13.5931 14.0002 13.733 13.9469 13.8398 13.8401C14.0534 13.6265 14.0534 13.2802 13.8398 13.0667L7.77344 7.00027Z" fill="#727272"/>
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+<!--            Адреса-->
+            <div class="container pt-[62px] flex flex-col gap-[30px]">
+                <table class="border-collapse border-spacing-[100px]">
+                    <thead>
+                    <tr>
+                        <th class="text-[14px] text-[#727272] font-normal text-start">Код</th>
+                        <th class="text-[14px] text-[#727272] font-normal text-start">Адрес</th>
+                        <th class="text-[14px] text-[#727272] font-normal text-start">Действия</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="personal-table relative">
+                        <td class="min-w-[170px] text-[16px]">1</td>
+                        <td class="min-w-[170px] w-fit text-[16px]">603036, Россия, г.Нижний Новгород, ул. Федосеенко, д.15, кв.89</td>
+                        <td class="min-w-[170px] text-[16px]"><a href="" class="leading underline">Изменить</a></td>
+                        <td class="flex flex-col items-center gap-[10px]">
+                            <button>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.77344 7.00027L13.8398 0.933847C14.0534 0.720265 14.0534 0.373985 13.8398 0.16043C13.6262 -0.0531239 13.28 -0.0531513 13.0664 0.16043L6.99999 6.22685L0.933603 0.16043C0.720021 -0.0531513 0.37374 -0.0531513 0.160186 0.16043C-0.0533681 0.374012 -0.0533954 0.720293 0.160186 0.933847L6.22658 7.00024L0.160186 13.0667C-0.0533954 13.2802 -0.0533954 13.6265 0.160186 13.8401C0.266963 13.9469 0.406936 14.0002 0.546908 14.0002C0.686881 14.0002 0.826826 13.9469 0.93363 13.8401L6.99999 7.77368L13.0664 13.8401C13.1732 13.9469 13.3131 14.0002 13.4531 14.0002C13.5931 14.0002 13.733 13.9469 13.8398 13.8401C14.0534 13.6265 14.0534 13.2802 13.8398 13.0667L7.77344 7.00027Z" fill="#727272"/>
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button class="py-[10px] min-h-[40px] font-bold w-full text-white px-[58px] bg-[#2e140e] max-w-[276px] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">
+                    Добавить адрес
+                </button>
+            </div>
+<!--         Подписки   -->
+            <div class="container pt-[62px] flex flex-col gap-[30px]">
+                <h3 class="text-[18px]">
+                    Настройки подписки
+                </h3>
+                <div class="flex items-center gap-[19px]">
+                    <div class="flex flex-col gap-[5px] max-w-[290px]">
+                        <label class="text-[12px] text-[#727272]" for="money">Ваш email</label>
+                        <div class="bg-[#FAFAFA] rounded-[6px] border-[1px] border-[#DDDDDD] py-[5px] px-[10px] flex items-center min-h-[41px]">
+                            <input placeholder="0.00" class="w-full mr-[5px]" id="money" type="text">
+                            <p class="text-[14px]">₽</p>
+                        </div>
+                    </div>
+                    <div class="max-w-[421px]">
+                        <p class="text-[#727272] text-[13px]">
+                            После добавления или изменения адреса подписки вам будет выслан код подтверждения. Подписка будет неактивна до ввода кода подтверждения.
+                        </p>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-[18px] mb-[14px]">
+                        Рубрики подписки
+                    </h3>
+                    <div class="flex flex-col gap-[23px]">
+                        <label class="flex items-center gap-[15px]">
+                            <input type="radio" name="subscription">
+                            <div class="custom-radio"></div>
+                            Картой онлайн
+                        </label>
+                        <label class="flex items-center gap-[15px]">
+                            <input type="radio" name="subscription">
+                            <div class="custom-radio"></div>
+                            Оплата по счету
+                        </label>
+                    </div>
+                </div>
+
+                <div class="">
+                    <h3 class="text-[18px] mb-[14px]">
+                        Предпочтительный формат
+                    </h3>
+                    <div class="flex flex-col gap-[23px]">
+                        <label class="flex items-center gap-[15px]">
+                            <input type="radio" name="format">
+                            <div class="custom-radio"></div>
+                            Текст
+                        </label>
+                        <label class="flex items-center gap-[15px]">
+                            <input type="radio" name="format">
+                            <div class="custom-radio"></div>
+                            HTML
+                        </label>
+                    </div>
+                </div>
+                <div class="">
+                    <label class="flex items-center gap-[15px]">
+                        <input type="radio" name="policy">
+                        <div class="custom-radio"></div>
+                        <p class="text-[#727272]">Я согласен на <a class="text-[#2E140E]" href="">обработку персональных данных</a></p>
+                    </label>
+                </div>
+                <div class="flex items-center gap-[11px] max-w-[327px]">
+                    <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">
+                        Сохранить
+                    </button>
+                    <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">
+                        Сброс
+                    </button>
+                </div>
+            </div>
+<!--            Избранное-->
+            <div class="container pt-[62px] flex flex-col gap-[30px]">
+                <div class="flex items-center gap-[10px]">
+                    <p class="text-[#2E140E] text-[18px]">Избранные товары</p>
+                    <button class="w-[18px] text-[10px] h-[18px] bg-[#727272] text-white rounded-full">
+                        1
+                    </button>
+                </div>
+                <div class="flex flex-col gap-[23 px]">
+                    <div class="flex gap-[40px] items-center max-w-[822px] w-fit relative">
+                        <button class="liked__btn absolute top-0 right-0 w-[18px] h-[18px] cursor-pointer">
+                            <svg class="liked__disable w-full h-full" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"></path>
+                            </svg>
+                            <svg class="liked__active w-full h-full" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"></path>
+                            </svg>
+                        </button>
+                        <div class="max-w-[63px]">
+                            <img src="/images/example/product.png" alt="">
+                        </div>
+                        <div class="flex items-center w-full gap-[96px]">
+                            <div class="">
+                                <p>Шоколад горький Carma Black Zabuye 83%</p>
+                                <p>1 кг</p>
+                            </div>
+                            <div class="flex justify-between items-end gap-[5px]">
+                                <div class="">
+                                    <div class="flex items-center gap-[4px] mb-[10px]">
+                                        <p class="text-[16px]">2 675 ₽</p>
+                                        <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">
+                                            -15%</p>
+                                    </div>
+                                    <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-[40px] items-center max-w-[822px] w-fit relative">
+                        <button class="liked__btn absolute top-0 right-0 w-[18px] h-[18px] cursor-pointer">
+                            <svg class="liked__disable w-full h-full" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"></path>
+                            </svg>
+                            <svg class="liked__active w-full h-full" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"></path>
+                            </svg>
+                        </button>
+                        <div class="max-w-[63px]">
+                            <img src="/images/example/product.png" alt="">
+                        </div>
+                        <div class="flex items-center w-full gap-[96px]">
+                            <div class="">
+                                <p>Шоколад горький Carma Black Zabuye 83%</p>
+                                <p>1 кг</p>
+                            </div>
+                            <div class="flex justify-between items-end gap-[5px]">
+                                <div class="">
+                                    <div class="flex items-center gap-[4px] mb-[10px]">
+                                        <p class="text-[16px]">2 675 ₽</p>
+                                        <p class=" px-[11px] bg-[#2E140E] !text-[12px] !text-white rounded-[2px]">
+                                            -15%</p>
+                                    </div>
+                                    <p class="!text-[26px] !font-bold">2 273,75 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
 </body>
 </html>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("[data-personal]").forEach((button) => {
+            button.addEventListener("click", () => {
+                if (button.querySelector("svg").classList.contains("arrow-none")) {
+                    button.querySelector("svg").classList.remove("arrow-none");
+                } else {
+                    button.querySelector("svg").classList.add("arrow-none");
+                }
+                const target = document.querySelector(`[data-personal-content="${button.getAttribute("data-personal")}"]`);
+
+                if (target) {
+                    target.classList.toggle("!hidden");
+                    target.classList.toggle("!block");
+                }
+            });
+        });
+    });
+</script>

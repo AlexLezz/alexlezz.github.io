@@ -104,6 +104,56 @@ a {
     text-decoration: none;
 }
 
+input:focus {
+    outline: none;
+}
+
+/*Checkboxes*/
+
+.custom-radio {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #2E140E;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s, border-color 0.2s;
+    border-radius: 5px;
+
+}
+
+/* Внутренний кружок (галочка) */
+.custom-radio::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    translate: -50% -50%;
+    background: #2E140E;
+    transition: opacity 0.2s;
+    border-radius: 2px;
+}
+
+/* Если radio выбран — меняем стиль */
+input[type="radio"]:checked + .custom-radio {
+    border-color: #2E140E;
+}
+
+input[type="radio"]:checked + .custom-radio::after {
+    opacity: 1;
+}
+
+/* Скрываем стандартный radio */
+input[type="radio"] {
+    display: none;
+}
+
+
+/* */
+
 a:hover {
     /*color: var(--btn);*/
 }
@@ -396,4 +446,18 @@ a:active {
 
 .brand__item {
     width: calc(25% - 20px);
+}
+
+/* Personal */
+
+.personal-table .personal-table__item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.arrow-none {
+    transform: rotate(180deg);
 }
