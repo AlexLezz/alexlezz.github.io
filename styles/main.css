@@ -461,3 +461,7 @@ a:active {
 .arrow-none {
     transform: rotate(180deg);
 }
+
+.personal-menu--active {
+    border-bottom: 1px solid #2E140E !important;
+}

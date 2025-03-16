@@ -148,29 +148,29 @@
                         <h2 class="text-[30px] mb-[30px] font-medium">
                             Личный кабинет
                         </h2>
-                        <ul class="flex justify-between gap-[5px]">
-                           <li class="pb-[10px]">
+                        <ul class="personal-menu flex justify-between gap-[5px]">
+                           <li id="personal" class="pb-[10px] cursor-pointer personal-menu--active">
                                Личные данные
                            </li>
-                            <li class="pb-[10px]">
+                            <li id="password" class="pb-[10px] cursor-pointer">
                                 Сменить пароль
                             </li>
-                            <li class="pb-[10px]">
+                            <li id="orders" class="pb-[10px] cursor-pointer">
                                 Мои заказы
                             </li>
-                            <li class="pb-[10px]">
+                            <li id="score" class="pb-[10px] cursor-pointer">
                                 Мой счет
                             </li>
-                            <li class="pb-[10px]">
+                            <li id="profile" class="pb-[10px] cursor-pointer">
                                 Профили
                             </li>
-                            <li class="pb-[10px]">
+                            <li id="address" class="pb-[10px] cursor-pointer">
                                 Адреса
                             </li>
-                            <li class="pb-[10px]">
+                            <li id="subscriptions" class="pb-[10px] cursor-pointer">
                                 Подписки
                             </li>
-                            <li class="pb-[10px]">
+                            <li id="favourites" class="pb-[10px] cursor-pointer">
                                 Избранное
                             </li>
                         </ul>
@@ -179,7 +179,7 @@
             </div>
 <!--            Далее вкладки-->
 <!--Главная-->
-            <div class="container pt-[62px]">
+            <div id="personal-page" class="container pt-[62px]">
                 <div class="flex flex-col flex-wrap gap-[22px] mb-[30px]">
                     <div class="flex flex-col gap-[5px] making-order__item">
                         <label class="text-[12px] text-[#727272]" for="name">Ф.И.О. <span class="text-[#DB2C2A] text-[12px]">*</span></label>
@@ -204,7 +204,7 @@
                 </button>
             </div>
 <!--            Пароль-->
-            <div class="container pt-[62px]">
+            <div id="password-page" class="hidden container pt-[62px]">
                 <div class="flex flex-col flex-wrap gap-[22px] mb-[30px]">
                     <div class="flex flex-col gap-[5px] making-order__item">
                         <label class="text-[12px] text-[#727272]" for="name">Новый пароль <span class="text-[#DB2C2A] text-[12px]">*</span></label>
@@ -223,7 +223,7 @@
                 </button>
             </div>
 <!--            Заказы-->
-            <div class="container pt-[62px]">
+            <div id="orders-page" class="hidden container pt-[62px]">
                 <div class="flex items-center gap-[40px]">
                     <div class="flex items-center gap-[10px]">
                         <p class="text-[#2E140E] text-[18px]">Текущие заказы</p>
@@ -297,12 +297,10 @@
                         </tr>
                         </tbody>
                     </table>
-
-
                 </div>
             </div>
 <!--           Мой счет -->
-            <div class="container pt-[62px] flex flex-col gap-[30px]">
+            <div id="score-page" class="hidden container pt-[62px] flex flex-col gap-[30px]">
                 <div class="flex items-center gap-[58px]">
                     <div class="flex flex-col gap-[15px]">
                         <h3 class="text-[18px]">
@@ -353,7 +351,7 @@
                     <div class="flex flex-col gap-[5px] max-w-[290px]">
                         <label class="text-[12px] text-[#727272]" for="money">Cумма</label>
                         <div class="bg-[#FAFAFA] rounded-[6px] border-[1px] border-[#DDDDDD] py-[5px] px-[10px] flex items-center min-h-[41px]">
-                            <input placeholder="0.00" class="w-full mr-[5px]" id="money" type="text">
+                            <input placeholder="0.00" class="w-full mr-[5px] bg-transparent" id="money" type="text">
                             <p class="text-[14px]">₽</p>
                         </div>
                     </div>
@@ -381,7 +379,7 @@
                 </button>
             </div>
 <!--         Профили   -->
-            <div class="container pt-[62px] flex flex-col gap-[30px]">
+            <div id="profile-page" class="hidden container pt-[62px] flex flex-col gap-[30px]">
                 <table class="border-collapse border-spacing-[100px]">
                     <thead>
                     <tr>
@@ -412,7 +410,7 @@
                 </table>
             </div>
 <!--            Адреса-->
-            <div class="container pt-[62px] flex flex-col gap-[30px]">
+            <div id="address-page" class="hidden container pt-[62px] flex flex-col gap-[30px]">
                 <table class="border-collapse border-spacing-[100px]">
                     <thead>
                     <tr>
@@ -442,7 +440,7 @@
                 </button>
             </div>
 <!--         Подписки   -->
-            <div class="container pt-[62px] flex flex-col gap-[30px]">
+            <div id="subscriptions-page" class="hidden container pt-[62px] flex flex-col gap-[30px]">
                 <h3 class="text-[18px]">
                     Настройки подписки
                 </h3>
@@ -512,7 +510,7 @@
                 </div>
             </div>
 <!--            Избранное-->
-            <div class="container pt-[62px] flex flex-col gap-[30px]">
+            <div id="favourites-page" class="hidden container pt-[62px] flex flex-col gap-[30px]">
                 <div class="flex items-center gap-[10px]">
                     <p class="text-[#2E140E] text-[18px]">Избранные товары</p>
                     <button class="w-[18px] text-[10px] h-[18px] bg-[#727272] text-white rounded-full">
@@ -602,5 +600,23 @@
                 }
             });
         });
+
+    //     Переключение между вкладками
+        const allMenuItems = document.querySelector('.personal-menu').querySelectorAll('li');
+        allMenuItems.forEach((item) => {
+            item.addEventListener('click', (element) => {
+                const elementMenuId = item.id;
+                allMenuItems.forEach((item) => {
+                    document.getElementById(item.id + '-page').classList.add('hidden');
+                })
+                allMenuItems.forEach((item) => {
+                    item.classList.remove('personal-menu--active');
+                })
+
+                item.classList.add('personal-menu--active');
+
+                document.getElementById(elementMenuId + '-page').classList.remove('hidden');
+            });
+        })
     });
 </script>
