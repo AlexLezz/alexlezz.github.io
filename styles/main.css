@@ -204,6 +204,21 @@ a:active {
     }
 }
 
+.footer-container {
+    /*mask-image: url(/images/footer/footerMask.svg);*/
+    /*-webkit-mask-image: url(/images/footer/footerMask.svg);*/
+    /*-webkit-mask-repeat: no-repeat;*/
+    /*mask-repeat: no-repeat;*/
+    /*-webkit-mask-size: contain;*/
+    /*background: #000;*/
+    /*mask-size: contain;*/
+    /*mask-composite: exclude;*/
+    /*-webkit-mask-composite: destination-in;*/
+    /*display: block;*/
+    background: #2E140E;
+
+}
+
 /*banner*/
 
 .main__btn {

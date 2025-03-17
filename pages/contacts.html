@@ -17,12 +17,33 @@
 <body>
 <header class="header bg-[#2E140E] pt-[33px] pb-[21px]">
     <div class="container flex flex-col gap-[16px]">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between xl:flex-row md:flex-col flex-row gap-[15px] items-center">
             <div class="max-w-[409px]">
                 <img src="./images/logo.svg" alt="">
             </div>
-            <div class="flex justify-between items-center gap-[30px]">
-                <button class="text-[14px] flex items-center gap-[10px]">
+            <div class="md:hidden block">
+                <div>
+                    <button id="burgerButton" class="md:hidden p-2 focus:outline-none">
+                        <svg id="burgerIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="md:flex hidden justify-between items-center gap-[30px]">
+                <form class="hidden search__form w-[256px] border-[1px] px-[15px] py-[12px] rounded-[30px] flex items-center gap-[10px]">
+                    <input type="text"
+                           class="w-full h-full bg-transparent  text-[#F4F3F3] text-[14px] placeholder:text-[#F4F3F3]"
+                           placeholder="Найти">
+                    <button>
+                        <svg class="" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.296 20.3303L15.745 14.8681C17.1987 13.2887 18.0918 11.2001 18.0918 8.90173C18.0911 3.98513 14.0414 0 9.04555 0C4.04966 0 0 3.98513 0 8.90173C0 13.8183 4.04966 17.8035 9.04555 17.8035C11.2041 17.8035 13.1839 17.0568 14.739 15.8156L20.3115 21.2994C20.583 21.5668 21.0238 21.5668 21.2954 21.2994C21.5675 21.0319 21.5675 20.5978 21.296 20.3303ZM9.04555 16.4339C4.81848 16.4339 1.39179 13.0616 1.39179 8.90173C1.39179 4.74183 4.81848 1.36958 9.04555 1.36958C13.2727 1.36958 16.6993 4.74183 16.6993 8.90173C16.6993 13.0616 13.2727 16.4339 9.04555 16.4339Z"
+                                  fill="#F4F3F3"/>
+                        </svg>
+                    </button>
+                </form>
+                <button class="search__btn text-[14px] flex items-center gap-[10px]">
                     <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_233_7218)">
                             <path d="M27.7352 26.9767L20.506 19.8631C22.3991 17.8063 23.5623 15.0862 23.5623 12.093C23.5614 5.68993 18.2874 0.5 11.7811 0.5C5.27483 0.5 0.000854492 5.68993 0.000854492 12.093C0.000854492 18.496 5.27483 23.6859 11.7811 23.6859C14.5923 23.6859 17.1706 22.7136 19.1959 21.097L26.4531 28.2387C26.8067 28.5871 27.3807 28.5871 27.7344 28.2387C28.0888 27.8904 28.0888 27.325 27.7352 26.9767ZM11.7811 21.9023C6.27609 21.9023 1.81341 17.5105 1.81341 12.093C1.81341 6.67541 6.27609 2.28364 11.7811 2.28364C17.2862 2.28364 21.7488 6.67541 21.7488 12.093C21.7488 17.5105 17.2862 21.9023 11.7811 21.9023Z"
@@ -76,8 +97,8 @@
             </div>
         </div>
 
-        <div class="pl-[58px] flex justify-between items-center">
-            <button class="flex items-center gap-[10px] bg-[#C2C99F] py-[10px] px-[20px] rounded-[30px]">
+        <div class="xl:pl-[58px] md:flex hidden xl:flex-row flex-col justify-between items-center gap-[15px]">
+            <a href="/catalog.html" class="flex items-center gap-[10px] bg-[#C2C99F] py-[10px] px-[20px] rounded-[30px]">
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_233_8039)">
                         <rect x="0.5" y="0.5" width="6" height="6" rx="0.5" stroke="white"/>
@@ -92,26 +113,26 @@
                     </defs>
                 </svg>
                 Каталог
-            </button>
+            </a>
 
             <nav>
-                <ul class="flex item-center justify-between gap-[40px]">
-                    <li class="text-[16px]">
+                <div class="flex item-center justify-between gap-[40px]">
+                    <a class="text-[16px]">
                         Акции
-                    </li>
-                    <li class="text-[16px]">
+                    </a>
+                    <a class="text-[16px]">
                         Бренды
-                    </li>
-                    <li class="text-[16px]">
+                    </a>
+                    <a class="text-[16px]">
                         Доставка и оплата
-                    </li>
-                    <li class="text-[16px]">
+                    </a>
+                    <a class="text-[16px]">
                         Мастер-классы
-                    </li>
-                    <li class="text-[16px]">
+                    </a>
+                    <a class="text-[16px]">
                         Контакты
-                    </li>
-                </ul>
+                    </a>
+                </div>
             </nav>
 
             <div class="flex items-center gap-[20px]">
@@ -208,6 +229,83 @@
         </div>
     </section>
 </main>
+<footer class="footer-container !py-[82px] lg:pr-[49px] lg:pl-[170px]">
+    <div class="flex justify-between lg:items-start items-center gap-[15px] lg:flex-row flex-col">
+        <div class="">
+            <div class="mb-[36px]">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="flex gap-[58px] mb-[14px] lg:flex-row flex-col">
+                <div class="flex flex-col items-center gap-[14px]">
+                    <a class="text-[16px] text-[#F4F3F3]" href="tel:+7 (905) 950 06 60">+7 (905) 950 06 60</a>
+                    <a class="text-[16px] text-[#F4F3F3]"
+                       href="mailto:sales@chocolatnsk.ru">sales@chocolatnsk.ru</a>
+                </div>
+                <div class="flex items-center lg:justify-start justify-center gap-[17px]">
+                    <a href="">
+                        <svg width="42" height="26" viewBox="0 0 42 26" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.641 24.3432V17.6109C29.2154 18.3003 30.6615 21.8591 33.5744 24.3432H41C39.1435 20.246 36.3735 16.6169 32.8974 13.7277C35.5641 10.0979 38.3949 6.68104 39.7795 1.5H33.0308C30.3846 5.46436 28.9897 10.108 24.641 13.17V1.5H14.8462L17.1846 4.3592V14.5489C13.3897 14.1129 10.8256 7.24882 8.04615 1.5H1C3.5641 9.26649 8.95897 26.3102 24.641 24.3432Z"
+                                  stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.2075 1.01438C28.8994 0.756933 28.528 0.588332 28.1327 0.526454C27.7373 0.464576 27.3327 0.511727 26.9618 0.662908L1.36642 11.0818C0.952817 11.2532 0.600686 11.5473 0.356776 11.9252C0.112867 12.3032 -0.0112836 12.7469 0.000806048 13.1977C0.0128957 13.6484 0.160654 14.0848 0.424464 14.4488C0.688275 14.8129 1.05566 15.0875 1.47785 15.2361L7.00063 17.1692L9.99345 27.1458C9.99916 27.166 10.0177 27.1789 10.0263 27.1977C10.0571 27.2773 10.1022 27.3505 10.1592 27.4137C10.2458 27.5113 10.3575 27.5826 10.482 27.6197C10.4963 27.6255 10.5063 27.6384 10.5206 27.6413H10.5292L10.5334 27.6428C10.644 27.6667 10.7588 27.6608 10.8663 27.6255C10.8777 27.6226 10.8891 27.6226 10.902 27.6183C11.0052 27.5818 11.0986 27.5216 11.1749 27.4425C11.1834 27.4325 11.1977 27.431 11.2063 27.4224L15.5105 22.6314L21.7919 27.5362C22.1733 27.8372 22.6433 28 23.1275 28C24.1761 28 25.0804 27.2596 25.2961 26.2268L29.956 3.15347C30.0351 2.76177 30.0072 2.35578 29.8754 1.97881C29.7435 1.60183 29.5127 1.26801 29.2075 1.01294M11.5549 19.0634L10.5449 24.0142L8.43775 16.9877L18.8876 11.4995L11.7491 18.6989C11.6503 18.7985 11.5827 18.9253 11.5549 19.0634ZM23.8961 25.9373C23.8693 26.0679 23.8096 26.1893 23.7228 26.29C23.636 26.3906 23.525 26.4671 23.4004 26.512C23.2789 26.5592 23.1473 26.5736 23.0185 26.5539C22.8898 26.5342 22.7683 26.481 22.6661 26.3996L15.8619 21.0858C15.7197 20.9751 15.5413 20.9225 15.3623 20.9385C15.1833 20.9545 15.0169 21.038 14.8962 21.1722L11.9006 24.5011L12.9091 19.5647L23.179 9.20773C23.2992 9.08606 23.3724 8.92505 23.3853 8.75375C23.3982 8.58246 23.3499 8.41216 23.2492 8.27359C23.1485 8.13502 23.002 8.03731 22.8362 7.99808C22.6703 7.95886 22.496 7.98071 22.3447 8.05968L7.54062 15.8353L1.94499 13.8734C1.79662 13.824 1.66722 13.7292 1.57479 13.6021C1.48236 13.4751 1.4315 13.3222 1.42928 13.1647C1.42216 13.0058 1.46427 12.8485 1.54977 12.7148C1.63527 12.5811 1.75991 12.4776 1.90642 12.4185L27.4975 1.99966C27.6286 1.94347 27.7727 1.9253 27.9135 1.94719C28.0544 1.96907 28.1863 2.03015 28.2946 2.12354C28.4023 2.21139 28.4836 2.32769 28.5295 2.45945C28.5754 2.59121 28.5841 2.73325 28.5546 2.8697L23.8961 25.9373Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-[24px] lg:items-start items-center">
+                <a class="text-[16px] text-[#F4F3F3] w-fit" href="">Заказать звонок</a>
+                <p class="text-[16px] !text-[#F4F3F3] w-fit">© 2024 ШоколадНСК, все права защищены</p>
+            </div>
+        </div>
+
+        <ul class="flex lg:flex-col sm:flex-row flex-col sm:items-start items-center gap-[20px] ">
+            <li>
+                <a class="text-[16px] text-[#F4F3F3]" href="">Каталог</a>
+            </li>
+            <li>
+                <a class="text-[16px] text-[#F4F3F3]" href="">Акции</a>
+            </li>
+            <li>
+                <a class="text-[16px] text-[#F4F3F3]" href="">Бренды</a>
+            </li>
+            <li>
+                <a class="text-[16px] text-[#F4F3F3]" href="">Доставка и оплата</a>
+            </li>
+            <li>
+                <a class="text-[16px] text-[#F4F3F3]" href="">Блог</a>
+            </li>
+            <li>
+                <a class="text-[16px] text-[#F4F3F3]" href="">Контакты</a>
+            </li>
+        </ul>
+
+        <div class="flex flex-col gap-[47px] lg:items-start items-center">
+            <div class="flex flex-col gap-[24px] lg:items-start items-center">
+                <p class="text-[16px] lg:pl-[20px] w-fit !text-[#F4F3F3]">Подпишитесь на новинки и акции</p>
+                <div class="footer-input__container flex items-center bg-[#C3CAD9] bg-[#FFFFFF] border-[1px] border-[#2E140E] sm:w-[430px] w-full justify-between rounded-[30px] p-[5px]">
+                    <input class="w-full h-full focus:outline-none px-[48px] bg-transparent" type="text">
+                    <button class="py-[14px] px-[33px] bg-[#2E140E] text-[#FFFFFF] rounded-[30px]">Подписаться
+                    </button>
+                </div>
+            </div>
+            <ul class="pl-[20px] flex flex-col gap-[15px]">
+                <li>
+                    <a class="text-[16px] text-[#F4F3F3]" href="">Обработка персональных данных</a>
+                </li>
+                <li>
+                    <a class="text-[16px] text-[#F4F3F3]" href="">Правила продажи и реквизиты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
 <script>
