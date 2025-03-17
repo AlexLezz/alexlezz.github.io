@@ -520,6 +520,10 @@ a:active {
     .brand__item {
         width: 100%;
     }
+
+    .delivery-nav--item{
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 768px) {
