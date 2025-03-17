@@ -204,6 +204,20 @@ a:active {
     }
 }
 
+.footer-container {
+    /*mask-image: url(/images/footer/footerMask.svg);*/
+    /*-webkit-mask-image: url(/images/footer/footerMask.svg);*/
+    /*-webkit-mask-repeat: no-repeat;*/
+    /*mask-repeat: no-repeat;*/
+    /*-webkit-mask-size: contain;*/
+    /*background: #000;*/
+    /*mask-size: contain;*/
+    /*mask-composite: exclude;*/
+    /*-webkit-mask-composite: destination-in;*/
+    /*display: block;*/
+
+}
+
 /*banner*/
 
 .main__btn {
@@ -261,6 +275,7 @@ a:active {
 .info-grid-item {
     border-radius: 10px;
     width: 100%;
+    min-height: 150px;
     height: 100%;
     border: 1px solid #787878;
     padding: 20px;
