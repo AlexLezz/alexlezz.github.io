@@ -406,7 +406,7 @@
                     </div>
                 </div>
                 <div class="pl-[142px] mt-[30px] relative">
-                    <div class="md:block hidden absolute top-0 right-0 z-[100] w-[142px] h-[100%] bg-gradient-to-r from-transparent to-white/60">
+                    <div class="absolute top-0 right-0 z-[100] w-[142px] h-[100%] bg-gradient-to-r from-transparent to-white/60">
                     </div>
                     <div class="swiper products-slider">
                         <div class="swiper-wrapper">

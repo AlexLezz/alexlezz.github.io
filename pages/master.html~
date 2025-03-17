@@ -143,8 +143,8 @@
     </div>
 </header>
 <main>
-    <section class="brand mt-[45px] mb-[115px] container-mobile">
-        <div class="container">
+    <section class="master pt-[45px] pb-[100px]">
+        <div class="container mb-[30px]">
             <div class="breadcrumbs flex mb-[45px] items-center gap-[6.5px]">
                 <a href="" class="text-[#717171] font-normal text-sm">Главная</a>
                 <div class="">
@@ -163,36 +163,68 @@
                 </div>
                 <a class="text-sm text-[#000000]" href="">Каталог</a>
             </div>
-
-            <h2 class="mb-[23px] text-[30px] font-medium">
-                Бренды
-            </h2>
-            <p class="max-w-[560px] mb-[43px]">
-                Мы являемся официальным дистрибьютором указанных брендов, это позволяет нам работать по самым низким ценам.
-            </p>
-            <ul class="flex items-center gap-x-[20px] gap-y-[23px] w-full flex-wrap">
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-
-<!--                Такие же-->
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-
-            </ul>
+            <div class="flex justify-between items-center gap-[5px]">
+                <h2 class="text-[30px] mb-[10px] font-medium">
+                    Мастер-классы
+                </h2>
+                <div class="flex items-center gap-[14px]">
+                    <button class="nav-btn shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] flex justify-center items-center master-page-nav__prev">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="btn__prev"
+                                  d="M2.89633 5.6707L8.44668 0.1357C8.62853 -0.0455414 8.92295 -0.0452367 9.1045 0.136638C9.28591 0.318488 9.28544 0.613073 9.10356 0.794455L3.88358 6.00002L9.10375 11.2056C9.2856 11.387 9.28607 11.6814 9.10469 11.8632C9.01368 11.9544 8.89445 12 8.77523 12C8.65631 12 8.53755 11.9547 8.44671 11.8642L2.89633 6.32932C2.80874 6.24218 2.7596 6.12358 2.7596 6.00002C2.7596 5.87646 2.80889 5.75801 2.89633 5.6707Z"
+                                  fill="#2E140E"/>
+                        </svg>
+                    </button>
+                    <button class="nav-btn shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] flex justify-center items-center master-page-nav__next">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="btn__next"
+                                  d="M9.10367 5.6707L3.55332 0.1357C3.37147 -0.0455414 3.07705 -0.0452367 2.8955 0.136638C2.71409 0.318488 2.71456 0.613073 2.89644 0.794455L8.11642 6.00002L2.89625 11.2056C2.7144 11.387 2.71393 11.6814 2.89531 11.8632C2.98632 11.9544 3.10555 12 3.22477 12C3.34369 12 3.46245 11.9547 3.55329 11.8642L9.10367 6.32932C9.19126 6.24218 9.2404 6.12358 9.2404 6.00002C9.2404 5.87646 9.19111 5.75801 9.10367 5.6707Z"
+                                  fill="#2E140E"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper master-slider-page">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="border-[1px] rounded-[10px] border-[#F5F5F5] pt-[26px] pb-[67px] px-[21px] flex flex-col gap-[51px]">
+                            <div class="">
+                                <div class="flex justify-end mb-[15px]">
+                                    <button class="liked__btn cursor-pointer">
+                                        <svg class="liked__disable" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 23.5535C12.6298 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.93188 21.3943 9.03845 20.633L9.03389 20.629C6.41449 18.3969 4.15255 16.4691 2.57873 14.5702C0.819441 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732558 4.12831 2.06259 2.68561C3.40849 1.22585 5.25525 0.421875 7.26329 0.421875C8.76411 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.236 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1807 12.4473 23.4214 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0718 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26329 1.94492C5.6857 1.94492 4.23646 2.57452 3.18215 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75126 13.5984C5.24077 15.3958 7.4563 17.2838 10.0215 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.544 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4771 10.085 24.4771 8.23564C24.4771 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3142 1.94492 18.7369 1.94492C17.5812 1.94492 16.5201 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3495 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47981 2.31229 8.41876 1.94492 7.26329 1.94492Z" fill="#2E140E"></path>
+                                        </svg>
+                                        <svg class="liked__active" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.0961 2.4021C20.8537 1.05463 19.149 0.3125 17.2956 0.3125C15.9102 0.3125 14.6415 0.750488 13.5245 1.6142C12.9609 2.05017 12.4503 2.58356 12 3.20612C11.5499 2.58374 11.0391 2.05017 10.4753 1.6142C9.35852 0.750488 8.08978 0.3125 6.70441 0.3125C4.85101 0.3125 3.14612 1.05463 1.90375 2.4021C0.676208 3.73383 0 5.55316 0 7.52521C0 9.55493 0.756409 11.4129 2.38037 13.3725C3.83313 15.1254 5.92108 16.9048 8.33899 18.9653C9.16461 19.6689 10.1005 20.4666 11.0722 21.3162C11.3289 21.541 11.6583 21.6648 12 21.6648C12.3415 21.6648 12.6711 21.541 12.9274 21.3165C13.8992 20.4667 14.8356 19.6688 15.6616 18.9647C18.0791 16.9046 20.1671 15.1254 21.6198 13.3723C23.2438 11.4129 24 9.55493 24 7.52502C24 5.55316 23.3238 3.73383 22.0961 2.4021Z" fill="#2E140E"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="w-full h-[318px]">
+                                    <img class="w-full h-full object-contain" src="/images/master/master-img.png" alt="">
+                                </div>
+                            </div>
+                            <div class="">
+                                <h3 class="text-[20px] text-medium font-medium mb-[40px]">
+                                    Подарочный сертификат. Практический мастер-класс «Торт от А до Я»
+                                </h3>
+                                <p class="font-medium text-[26px] mb-[20px]">
+                                    9 000 ₽
+                                </p>
+                                <div class="">
+                                    <div class="flex items-center gap-[11px]">
+                                        <button class="py-[10px] min-h-[40px] w-full text-white px-[40px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">
+                                            В корзину
+                                        </button>
+                                        <button class="py-[10px] min-h-[40px] w-full px-[40px] rounded-[30px] border border-[#2e140e]">
+                                            Подробнее
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -272,5 +304,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>

@@ -216,6 +216,8 @@ a:active {
     /*-webkit-mask-composite: destination-in;*/
     /*display: block;*/
     background: #2E140E;
+    -webkit-mask-image: url('/images/footer/footerMask.svg');
+    mask-image: url('/images/footer/footerMask.svg');
 
 }
 
@@ -233,17 +235,35 @@ a:active {
 /**/
 
 /* products */
+.product__select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
 .product__select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('/images/arrow.svg'); /* Добавляем кастомную стрелку */
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 16px;
-    padding-right: 30px;
     box-sizing: border-box;
     font-weight: 600;
+    width: 100%;
+    padding-right: 10px;
+}
+
+/* Добавляем стрелку через псевдоэлемент */
+.product__select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    right: 10px;
+    transform: translateY(-50%);
+    background-image: url("../images/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 13px;
+    pointer-events: none;
 }
 
 .counter--active {
@@ -473,4 +493,12 @@ a:active {
 
 .personal-menu--active {
     border-bottom: 1px solid #2E140E !important;
+}
+
+@media (max-width: 1024px) {
+    .container-mobile {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 }

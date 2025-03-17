@@ -143,8 +143,8 @@
     </div>
 </header>
 <main>
-    <section class="brand mt-[45px] mb-[115px] container-mobile">
-        <div class="container">
+    <section class="promo pt-[45px]">
+        <div class="container mb-[30px]">
             <div class="breadcrumbs flex mb-[45px] items-center gap-[6.5px]">
                 <a href="" class="text-[#717171] font-normal text-sm">Главная</a>
                 <div class="">
@@ -164,35 +164,35 @@
                 <a class="text-sm text-[#000000]" href="">Каталог</a>
             </div>
 
-            <h2 class="mb-[23px] text-[30px] font-medium">
-                Бренды
+            <h2 class="text-[30px] font-medium">
+                Акции
             </h2>
-            <p class="max-w-[560px] mb-[43px]">
-                Мы являемся официальным дистрибьютором указанных брендов, это позволяет нам работать по самым низким ценам.
-            </p>
-            <ul class="flex items-center gap-x-[20px] gap-y-[23px] w-full flex-wrap">
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-
-<!--                Такие же-->
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-                <li class="brand__item rounded-[10px] flex justify-center items-center shadow-[0px_4px_20px_0px_rgba(106,106,106,0.17)] border border-neutral-100 h-[136px]">
-                    <img src="/images/delivery/brand.png" alt="">
-                </li>
-
-            </ul>
+        </div>
+        <div class="swiper promo-slider bg-[#F6EFE2]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container flex justify-between gap-[60px] pt-[53px] pb-[86px]">
+                        <div class="swiper-button-prev nav-btn promo-nav__prev !left-[110px]"></div>
+                        <div class="!max-w-[352px]">
+                            <div class="">
+                                <h1 class="mb-[17px] uppercase leading-[55px] text-[50px] font-extrabold text-stone-900 text-[#2E140E] ">
+                                    новая коллекция к пасхе
+                                </h1>
+                                <p class="text-[20px] mb-[32px]">
+                                    Лучшие товары по выгодным ценам к празднику Пасхи
+                                </p>
+                                <button class="py-[18px] min-h-[40px] w-full text-white px-[67px] bg-[#2e140e] rounded-[30px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.15)]">
+                                    Подробнее →
+                                </button>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img src="/images/promo/promo.png" alt="">
+                        </div>
+                        <div class="swiper-button-prev nav-btn promo-nav__next !left-[110px]"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -272,5 +272,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>
