@@ -149,6 +149,17 @@ document.addEventListener('DOMContentLoaded', () => {
         navigation: {
             nextEl: '.master-page-nav__next',
             prevEl: '.master-page-nav__prev',
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            0: {
+                slidesPerView: 1,
+            }
         }
     })
 
