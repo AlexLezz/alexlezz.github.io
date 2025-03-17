@@ -170,3 +170,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     })
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    const searchBtn = document.querySelector('.search__btn');
+    const searchForm = document.querySelector('.search__form');
+
+    searchBtn.addEventListener('click', function () {
+        searchForm.classList.toggle('hidden');
+        searchBtn.classList.toggle('hidden');
+    });
+
+    //     burger
+
+    const burgerButton = document.getElementById('burgerButton');
+    const burgerIcon = document.getElementById('burgerIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const overflowBody = document.querySelector('body');
+
+    burgerButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        burgerIcon.classList.toggle('hidden');
+        overflowBody.classList.toggle('overflow-hidden');
+    });
+
+    closeIcon.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        burgerIcon.classList.toggle('hidden');
+        overflowBody.classList.toggle('overflow-hidden');
+    });
+});
