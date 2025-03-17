@@ -1,0 +1,460 @@
+@font-face {
+    font-family: "Manrope";
+    src: local("Manrope-Bold"),
+    url("/fonts/Manrope-Bold.woff2") format("woff2"),
+    url("/fonts/Manrope-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: local("Manrope-ExtraBold"),
+    url("/fonts/Manrope-ExtraBold.woff2") format("woff2"),
+    url("/fonts/Manrope-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: local("Manrope-Medium"),
+    url("/fonts/Manrope-Medium.woff2") format("woff2"),
+    url("/fonts/Manrope-Medium.woff") format("woff");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: local("Manrope-Regular"),
+    url("/fonts/Manrope-Regular.woff2") format("woff2"),
+    url("/fonts/Manrope-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+:root {
+    --header-bg: #2E140E;
+    --title-color: #F6EFE2;
+    --text-color: #2E140E;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 320px;
+    max-width: 3840px;
+    font-family: "Manrope", sans-serif;
+    background-color: white;
+}
+
+h2,
+h3,
+h4,
+p {
+    /*margin: 0;*/
+    color: var(--text-color);
+}
+
+h1 {
+    margin: 0;
+    color: var(--title-color);
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0em;
+    color: #2E140E;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #2E140E;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #2E140E;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #2E140E;
+}
+
+a {
+    transition: color 0.1s ease-in-out;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+/*Checkboxes*/
+
+.custom-radio {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #2E140E;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s, border-color 0.2s;
+    border-radius: 5px;
+
+}
+
+/* Внутренний кружок (галочка) */
+.custom-radio::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    translate: -50% -50%;
+    background: #2E140E;
+    transition: opacity 0.2s;
+    border-radius: 2px;
+}
+
+/* Если radio выбран — меняем стиль */
+input[type="radio"]:checked + .custom-radio {
+    border-color: #2E140E;
+}
+
+input[type="radio"]:checked + .custom-radio::after {
+    opacity: 1;
+}
+
+/* Скрываем стандартный radio */
+input[type="radio"] {
+    display: none;
+}
+
+
+/* */
+
+a:hover {
+    /*color: var(--btn);*/
+}
+
+a:active {
+    /*color: var(--text);*/
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1610px;
+    margin: 0 auto;
+}
+
+.breadcrumbs {
+    max-width: 1618px;
+    margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.nav-btn {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 100%;
+    background: #ffffff;
+    color: #2E140E;
+    position: relative;
+}
+
+.nav-btn::after {
+    font-size: 9px !important;
+}
+
+/* header */
+.header {
+    p, span, button, li, a {
+        color: #F4F3F3;
+    }
+}
+
+/*banner*/
+
+.main__btn {
+    padding: 18px 35px;
+    border-radius: 40px;
+    background-color: #C2C99F;
+    color: #F4F3F3;
+    font-size: 16px;
+    position: relative;
+}
+
+/**/
+
+/* products */
+.product__select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('/images/arrow.svg'); /* Добавляем кастомную стрелку */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.counter--active {
+    background: #2e140e;;
+}
+/**/
+
+/* product liked */
+.liked__active {
+    display: none;
+}
+
+.liked__btn--active .liked__disable {
+    display: none;
+}
+
+.liked__btn--active .liked__active {
+    display: block;
+}
+
+/* info */
+
+/*.info-grid {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr); !* 3 колонки *!*/
+/*    gap: 10px;*/
+/*    width: 100%;*/
+/*}*/
+
+.info-grid-item {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #787878;
+    padding: 20px;
+}
+
+.info-grid-item h4 {
+    color: #F6EFE2;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.info-grid-item p {
+    color: #F6EFE2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.info-grid-item a {
+    color: #F6EFE2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+/* Добавь для следующих элементов по аналогии */
+
+
+/* task */
+
+.task-item {
+    width: calc(50% - 40px);
+}
+
+@media (max-width: 768px) {
+    .task-item {
+        width: 100%;
+    }
+}
+
+/* footer */
+
+.footer-input__container {
+    position: relative;
+}
+
+.footer-input__container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 16px;
+    height: 12px;
+    background-image: url('/images/email-icon.svg');
+}
+
+/* Catalog */
+.catalog__img {
+    clip-path: ellipse(60% 85% at 50% 0%);
+}
+
+.range-slider {
+    position: relative;
+    width: 300px;
+    margin: 20px 0;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    -webkit-appearance: none; /* Отключаем стандартные стили */
+    appearance: none;
+    background: transparent; /* Прозрачный фон */
+    pointer-events: none;
+}
+
+/* Стилизация трека (строчки) */
+.slider::-webkit-slider-runnable-track {
+    height: 1px;
+    background: #2E140E;
+    border-radius: 5px;
+}
+
+.slider::-moz-range-track {
+    height: 1px;
+    background: #2E140E;
+    border-radius: 5px;
+}
+
+/* Стилизация ползунков (точек) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    position: relative;
+    z-index: 10;
+    height: 14px;
+    border: 1px solid #2E140E;
+    background: white;
+    border-radius: 100%;
+    cursor: pointer;
+    pointer-events: all;
+    margin-top: -6px;
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    position: relative;
+    z-index: 10;
+    height: 14px;
+    border: 1px solid #2E140E;
+    background: white;
+    border-radius: 100%;
+    cursor: pointer;
+    pointer-events: all;
+    margin-top: -6px;
+}
+
+/* Стилизация выделенной области между ползунками */
+.range-slider {
+    position: relative;
+}
+
+/*product page*/
+
+.product-page__item {
+    width: calc(50% - 129px);
+}
+
+.product-slider--thumbs {
+    .swiper-slide-active {
+        .product-thumbs__item {
+            border-color: #C2C99F !important;
+        }
+    }
+}
+
+/* making order */
+.making-order__item {
+    width: calc(50% - 11px);
+}
+
+/* Delivery */
+
+.delivery-nav--item:first-child {
+    width: calc(45% - 10px);
+}
+
+.delivery-nav--item:nth-child(2) {
+    width: calc(20% - 10px);
+}
+
+.delivery-nav--item:last-child {
+    width: calc(35% - 10px);
+}
+
+.delivery--active {
+    border: 1px solid #2E140E !important;
+    display: block !important;
+}
+
+/* brand*/
+
+.brand__item {
+    width: calc(25% - 20px);
+}
+
+/* Personal */
+
+.personal-table .personal-table__item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.arrow-none {
+    transform: rotate(180deg);
+}
+
+.personal-menu--active {
+    border-bottom: 1px solid #2E140E !important;
+}
