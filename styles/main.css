@@ -516,6 +516,10 @@ a:active {
     .product-page__item {
         width: 100%;
     }
+
+    .brand__item {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
