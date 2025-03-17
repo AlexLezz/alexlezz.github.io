@@ -513,4 +513,13 @@ a:active {
         mask: none;
     }
 
+    .product-page__item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .making-order__item {
+        width: 100%;
+    }
 }
