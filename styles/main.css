@@ -108,6 +108,10 @@ input:focus {
     outline: none;
 }
 
+input, select {
+    outline: none;
+}
+
 /*Checkboxes*/
 
 .custom-radio {
@@ -374,7 +378,7 @@ a:active {
 
 .range-slider {
     position: relative;
-    width: 300px;
+    /*width: 300px;*/
     margin: 20px 0;
 }
 
