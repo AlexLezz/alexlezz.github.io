@@ -216,8 +216,11 @@ a:active {
     /*-webkit-mask-composite: destination-in;*/
     /*display: block;*/
     background: #2E140E;
-    -webkit-mask-image: url('/images/footer/footerMask.svg');
-    mask-image: url('/images/footer/footerMask.svg');
+    width: 100%;
+    -webkit-mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 378"><path d="M1463.16 723.5L-15.8851 723.5C-15.8851 723.5 -312.495 -12.7544 22.6296 41.4883C357.754 95.7311 1094.52 -73.5061 1463.16 41.4885C1831.8 156.483 1463.16 723.5 1463.16 723.5Z" fill=%22white%22/></svg>');
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 378"><path d="M1463.16 723.5L-15.8851 723.5C-15.8851 723.5 -312.495 -12.7544 22.6296 41.4883C357.754 95.7311 1094.52 -73.5061 1463.16 41.4885C1831.8 156.483 1463.16 723.5 1463.16 723.5Z" fill=%22white%22/></svg>');
+    -webkit-mask-size: cover;
+    mask-size: cover;
 
 }
 
@@ -499,6 +502,11 @@ a:active {
     .container-mobile {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .footer-container {
+        -webkit-mask: none;
+        mask: none;
     }
 
 }
