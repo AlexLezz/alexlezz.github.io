@@ -177,8 +177,8 @@
             </div>
         </div>
 
-        <div class="xl:pl-[58px] md:flex hidden xl:flex-row flex-col justify-between items-center gap-[15px]">
-            <a href="/catalog.html" class="flex items-center gap-[10px] bg-[#C2C99F] py-[10px] px-[20px] rounded-[30px]">
+        <div class="xl:pl-[58px] flex xl:flex-row flex-col justify-between items-center gap-[15px]">
+            <button class="catalog__btn flex items-center gap-[10px] bg-[#C2C99F] py-[10px] px-[20px] rounded-[30px]">
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_233_8039)">
                         <rect x="0.5" y="0.5" width="6" height="6" rx="0.5" stroke="white"/>
@@ -193,9 +193,81 @@
                     </defs>
                 </svg>
                 Каталог
-            </a>
+            </button>
+            <div class="catalog-menu hidden absolute z-[10000] py-[50px] px-[45px] top-[184px] left-0 w-full bg-white">
+                <div class="container flex gap-[50px] flex-col">
+                    <ul class="flex items-center justify-between gap-x-[70px] gap-y-[50px] flex-wrap">
+                        <li class="flex justify-center flex-col justify-center">
+                            <div class="flex justify-center items-center">
+                                <img class="catalog__img" src="images/catalog/catalog_1.png" alt="">
+                            </div>
+                            <p class="text-center !text-[#2E140E] text-[16px]">Все для пасхи</p>
+                        </li>
+                        <!--                Далее такие же-->
+                        <li class="flex justify-center flex-col justify-center">
+                            <div class="flex justify-center items-center">
+                                <img class="catalog__img" src="images/catalog/catalog_1.png" alt="">
+                            </div>
+                            <p class="text-center !text-[#2E140E] text-[16px]">Все для пасхи</p>
+                        </li>
+                        <li class="flex justify-center flex-col justify-center">
+                            <div class="flex justify-center items-center">
+                                <img class="catalog__img" src="images/catalog/catalog_1.png" alt="">
+                            </div>
+                            <p class="text-center !text-[#2E140E] text-[16px]">Все для пасхи</p>
+                        </li>
+                        <li class="flex justify-center flex-col justify-center">
+                            <div class="flex justify-center items-center">
+                                <img class="catalog__img" src="images/catalog/catalog_1.png" alt="">
+                            </div>
+                            <p class="text-center !text-[#2E140E] text-[16px]">Все для пасхи</p>
+                        </li>
+                        <li class="flex justify-center flex-col justify-center">
+                            <div class="flex justify-center items-center">
+                                <img class="catalog__img" src="images/catalog/catalog_1.png" alt="">
+                            </div>
+                            <p class="text-center !text-[#2E140E] text-[16px]">Все для пасхи</p>
+                        </li>
+                        <li class="flex justify-center flex-col justify-center">
+                            <div class="flex justify-center items-center">
+                                <img class="catalog__img" src="images/catalog/catalog_1.png" alt="">
+                            </div>
+                            <p class="text-center !text-[#2E140E] text-[16px]">Все для пасхи</p>
+                        </li>
+                        <li class="flex justify-center flex-col justify-center">
+                            <div class="flex justify-center items-center">
+                                <img class="catalog__img" src="images/catalog/catalog_1.png" alt="">
+                            </div>
+                            <p class="text-center !text-[#2E140E] text-[16px]">Все для пасхи</p>
+                        </li>
+                        <li class="flex justify-center flex-col justify-center">
+                            <div class="flex justify-center items-center">
+                                <img class="catalog__img" src="images/catalog/catalog_1.png" alt="">
+                            </div>
+                            <p class="text-center !text-[#2E140E] text-[16px]">Все для пасхи</p>
+                        </li>
+                        <li class="flex justify-center flex-col justify-center">
+                            <div class="flex justify-center items-center">
+                                <img class="catalog__img" src="images/catalog/catalog_1.png" alt="">
+                            </div>
+                            <p class="text-center !text-[#2E140E] text-[16px]">Все для пасхи</p>
+                        </li>
+                        <li class="flex justify-center flex-col justify-center">
+                            <div class="flex justify-center items-center">
+                                <img class="catalog__img" src="images/catalog/catalog_1.png" alt="">
+                            </div>
+                            <p class="text-center !text-[#2E140E] text-[16px]">Все для пасхи</p>
+                        </li>
 
-            <nav>
+                    </ul>
+                    <div class="sm:w-fit w-full flex justify-center items-center">
+                        <a href="/catalog.html" class="main__btn min-w-[241px]">
+                            Перейти к каталогу →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="md:flex hidden">
                 <div class="flex item-center justify-between gap-[40px]">
                     <a href="/pages/promo.html" class="text-[16px]">
                         Акции
@@ -215,7 +287,7 @@
                 </div>
             </nav>
 
-            <div class="flex items-center gap-[20px]">
+            <div class="md:flex hidden items-center gap-[20px]">
                 <a class="text-[16px]" href="">+7 (905) 950 06 60</a>
                 <a class="text-[16px]" href="">Заказать звонок</a>
             </div>
@@ -1942,3 +2014,8 @@
 </footer>
 </body>
 </html>
+<script>
+    document.querySelector('.catalog__btn').addEventListener('click', () => {
+        document.querySelector('.catalog-menu').classList.toggle('hidden');
+    })
+</script>
